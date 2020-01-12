@@ -39,3 +39,36 @@ func ParseInteger(string_value string) (int, error) {
 }
 
 func MaxInt(a, b int) int {
+	if a > b {
+		return a
+	} else {
+		return b
+	}
+}
+
+func AnalyseData(rows [][]string) error {
+	var maxFilesRemaining int
+	for line_number, row := range rows {
+		if len(row) != 5 {
+			return fmt.Errorf("Line %v: Expected 5 values", line_number+1)
+		}
+		// Skip header
+		if *flagSkipHeader && line_number == 0 {
+			continue
+		}
+		// Parse the second value
+		filesRemaining, err := ParseInteger(row[1])
+		if err == ErrEmpty {
+			continue
+		} else if err != nil {
+			return fmt.Errorf("Line %v: %v", line_number+1, err)
+		}
+		maxFilesRemaining = MaxInt(filesRemaining, maxFilesRemaining)
+	}
+
+	fmt.Printf("maxFilesRemaining=%v\n", maxFilesRemaining)
+
+	return nil
+}
+
+func RunMain() int {
