@@ -72,3 +72,25 @@ func AnalyseData(rows [][]string) error {
 }
 
 func RunMain() int {
+	if f, err := os.Open("data.csv"); err != nil {
+		log.Println(err)
+		return -1
+	} else {
+		defer f.Close()
+		r := csv.NewReader(f)
+		if rows, err := r.ReadAll(); err != nil {
+			log.Println(err)
+			return -1
+		} else if err := AnalyseData(rows); err != nil {
+			log.Println(err)
+			return -1
+		}
+	}
+	return 0
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func main() {
+	os.Exit(RunMain())
+}
