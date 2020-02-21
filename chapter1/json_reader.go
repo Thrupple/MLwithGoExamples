@@ -73,3 +73,31 @@ func (t *mytime) UnmarshalJSON(j []byte) error {
 
 // Unmarshall a pure number into a time.Duration structure, where the
 // number represents a second
+func (d *myduration) UnmarshalJSON(j []byte) error {
+	if seconds, err := strconv.ParseInt(string(j), 10, 64); err != nil {
+		return err
+	} else {
+		d.d = time.Second * time.Duration(seconds)
+		return nil
+	}
+}
+
+func (t *mytime) String() string {
+	return t.t.String()
+}
+
+func (d *myduration) String() string {
+	return d.d.String()
+}
+
+func (d *mydata) String() string {
+	return fmt.Sprintf("%v", d.Stations)
+}
+
+func (s *station) String() string {
+	return fmt.Sprintf("station{ id=%v last_reported=%v is_installed=%v is_renting=%v is_returning=%v bikes_available=%v docks_available=%v bikes_disabled=%v docks_disabled=%v }", s.StationId, s.LastReported, s.IsInstalled, s.IsRenting, s.IsReturning, s.BikesAvailable, s.DocksAvailable, s.BikesDisabled, s.DocksDisabled)
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func RunMain() int {
