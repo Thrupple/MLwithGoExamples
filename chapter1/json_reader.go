@@ -101,3 +101,31 @@ func (s *station) String() string {
 ///////////////////////////////////////////////////////////////////////////////
 
 func RunMain() int {
+	// Get the JSON response from the URL
+	if response, err := http.Get(CITIBIKE_URL); err != nil {
+		log.Println(err)
+		return -1
+	} else {
+		defer response.Body.Close()
+		if body, err := ioutil.ReadAll(response.Body); err != nil {
+			log.Println(err)
+			return -1
+		} else {
+			var data CitibikeStationData
+			// Unmarshal the JSON data into the variable.
+			if err := json.Unmarshal(body, &data); err != nil {
+				log.Println(err)
+				return -1
+			}
+			// Print out the data on stdout
+			fmt.Println(data)
+		}
+	}
+	return 0
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func main() {
+	os.Exit(RunMain())
+}
