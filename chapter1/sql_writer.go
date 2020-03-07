@@ -60,3 +60,42 @@ type station struct {
 
 const (
 	// The URL which contains the citibike information
+	CITIBIKE_URL = "https://gbfs.citibikenyc.com/gbfs/en/station_status.json"
+
+	// The table name
+	SQL_TABLENAME = "station"
+)
+
+var (
+	FlagDatabasePath = flag.String("db", "", "Path to the database")
+
+	SQL_COLUMNS = []string{
+		"id integer not null primary key",
+		"last_reported string not null",
+		"is_installed bool",
+		"is_renting bool",
+		"docks_available integer",
+		"docks_disabled integer",
+		"bikes_available integer",
+		"bikes_disabled integer",
+	}
+)
+
+///////////////////////////////////////////////////////////////////////////////
+// PARSERS AND STRINGIFY
+
+// Unmarshall a unixtime into a time.Time structure
+func (t *mytime) UnmarshalJSON(j []byte) error {
+	if unixtime, err := strconv.ParseInt(string(j), 10, 64); err != nil {
+		return err
+	} else {
+		t.t = time.Unix(unixtime, 0)
+		return nil
+	}
+}
+
+// Unmarshall a pure number into a time.Duration structure, where the
+// number represents a second
+func (d *myduration) UnmarshalJSON(j []byte) error {
+	if seconds, err := strconv.ParseInt(string(j), 10, 64); err != nil {
+		return err
