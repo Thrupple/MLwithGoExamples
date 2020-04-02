@@ -99,3 +99,41 @@ func (t *mytime) UnmarshalJSON(j []byte) error {
 func (d *myduration) UnmarshalJSON(j []byte) error {
 	if seconds, err := strconv.ParseInt(string(j), 10, 64); err != nil {
 		return err
+	} else {
+		d.d = time.Second * time.Duration(seconds)
+		return nil
+	}
+}
+
+func (t *mytime) String() string {
+	return t.t.String()
+}
+
+func (d *myduration) String() string {
+	return d.d.String()
+}
+
+func (d *mydata) String() string {
+	return fmt.Sprintf("%v", d.Stations)
+}
+
+func (s *station) String() string {
+	return fmt.Sprintf("station{ id=%v last_reported=%v is_installed=%v is_renting=%v is_returning=%v bikes_available=%v docks_available=%v bikes_disabled=%v docks_disabled=%v }", s.StationId, s.LastReported, s.IsInstalled, s.IsRenting, s.IsReturning, s.BikesAvailable, s.DocksAvailable, s.BikesDisabled, s.DocksDisabled)
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func TableExists(db *sql.DB, name string) (bool, error) {
+	if resultset, err := db.Query("SELECT name FROM sqlite_master WHERE type='table'"); err != nil {
+		return false, err
+	} else {
+		defer resultset.Close()
+		for resultset.Next() {
+			var name2 string
+			if err := resultset.Scan(&name2); err != nil {
+				return false, err
+			}
+			if name == name2 {
+				return true, nil
+			}
+		}
