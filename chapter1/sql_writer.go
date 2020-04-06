@@ -137,3 +137,47 @@ func TableExists(db *sql.DB, name string) (bool, error) {
 				return true, nil
 			}
 		}
+		if err := resultset.Err(); err != nil {
+			return false, err
+		}
+		return false, nil
+	}
+}
+
+func CreateTable(db *sql.DB, name string, columns []string) error {
+	if _, err := db.Exec(fmt.Sprintf("CREATE TABLE %v (%v)", name, strings.Join(columns, ","))); err != nil {
+		return err
+	}
+	return nil
+}
+
+func WriteData(db *sql.DB, data CitibikeStationData) error {
+	// Check for SQL table, create as necessary
+	if exists, err := TableExists(db, SQL_TABLENAME); err != nil {
+		return err
+	} else if exists == false {
+		if err := CreateTable(db, SQL_TABLENAME, SQL_COLUMNS); err != nil {
+			return err
+		}
+	}
+
+	// Start transaction
+	if tx, err := db.Begin(); err != nil {
+		return err
+	} else {
+		// Prepare statement
+		if stmt, err := tx.Prepare(fmt.Sprintf("INSERT OR REPLACE INTO %v values(?,?,?,?,?,?,?,?)", SQL_TABLENAME)); err != nil {
+			return err
+		} else {
+			defer stmt.Close()
+
+			// Write out station data
+			for _, station := range data.Data.Stations {
+				if _, err := stmt.Exec(station.StationId, station.LastReported.String(), station.IsInstalled, station.IsRenting, station.DocksAvailable, station.DocksDisabled, station.BikesAvailable, station.BikesDisabled); err != nil {
+					return err
+				}
+			}
+		}
+
+		// Commit transaction
+		if err := tx.Commit(); err != nil {
