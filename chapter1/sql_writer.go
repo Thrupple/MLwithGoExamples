@@ -224,3 +224,13 @@ func RunMain() int {
 				return -1
 			}
 		}
+	}
+	return 0
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func main() {
+	flag.Parse()
+	os.Exit(RunMain())
+}
