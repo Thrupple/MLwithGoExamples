@@ -181,3 +181,46 @@ func WriteData(db *sql.DB, data CitibikeStationData) error {
 
 		// Commit transaction
 		if err := tx.Commit(); err != nil {
+			return err
+		}
+	}
+
+	return nil
+}
+
+func RunMain() int {
+	// Check database flag
+	if *FlagDatabasePath == "" {
+		log.Println("Expected -db flag")
+		return -1
+	}
+	// Open the database
+	db, err := sql.Open("sqlite3", *FlagDatabasePath)
+	if err != nil {
+		log.Println(err)
+		return -1
+	}
+	defer db.Close()
+
+	// Get the JSON response from the URL
+	if response, err := http.Get(CITIBIKE_URL); err != nil {
+		log.Println(err)
+		return -1
+	} else {
+		defer response.Body.Close()
+		if body, err := ioutil.ReadAll(response.Body); err != nil {
+			log.Println(err)
+			return -1
+		} else {
+			var data CitibikeStationData
+			// Unmarshal the JSON data into the variable.
+			if err := json.Unmarshal(body, &data); err != nil {
+				log.Println(err)
+				return -1
+			}
+			// Write out the station data
+			if err := WriteData(db, data); err != nil {
+				log.Println(err)
+				return -1
+			}
+		}
