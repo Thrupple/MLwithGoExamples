@@ -6,4 +6,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"os
+	"os"
+
+	"gonum.org/v1/gonum/stat"
+)
+
+/////////
