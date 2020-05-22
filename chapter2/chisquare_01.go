@@ -14,4 +14,5 @@ import (
 ///////////////////////////////////////////////////////////////////////////////
 
 func RunMain() int {
-	// Define observed and exp
+	// Define observed and expected values. Most
+	// of the time these will come 
