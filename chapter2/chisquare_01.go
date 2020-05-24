@@ -20,4 +20,4 @@ func RunMain() int {
 	observed := []float64{48, 52}
 	expected := []float64{50, 50}
 
-	// C
+	// Calculate the ChiSquare test stati
