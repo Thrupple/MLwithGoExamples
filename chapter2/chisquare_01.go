@@ -18,3 +18,6 @@ func RunMain() int {
 	// of the time these will come from your
 	// data (website visits, etc.).
 	observed := []float64{48, 52}
+	expected := []float64{50, 50}
+
+	// C
