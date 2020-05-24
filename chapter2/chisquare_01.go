@@ -16,4 +16,5 @@ import (
 func RunMain() int {
 	// Define observed and expected values. Most
 	// of the time these will come from your
-	// data (website visits, et
+	// data (website visits, etc.).
+	observed := []float64{48, 52}
