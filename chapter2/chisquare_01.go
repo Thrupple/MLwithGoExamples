@@ -15,4 +15,5 @@ import (
 
 func RunMain() int {
 	// Define observed and expected values. Most
-	// of the time these will come 
+	// of the time these will come from your
+	// data (website visits, et
