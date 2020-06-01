@@ -24,4 +24,5 @@ func RunMain() int {
 	chiSquare := stat.ChiSquare(observed, expected)
 
 	fmt.Println("Observed", observed)
-	fmt.Println("Expected", 
+	fmt.Println("Expected", expected)
+	fmt.Println("chiSquare", chiS
