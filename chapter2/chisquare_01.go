@@ -25,4 +25,9 @@ func RunMain() int {
 
 	fmt.Println("Observed", observed)
 	fmt.Println("Expected", expected)
-	fmt.Println("chiSquare", chiS
+	fmt.Println("chiSquare", chiSquare)
+
+	return 0
+}
+
+/////////////////////////////
