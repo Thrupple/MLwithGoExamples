@@ -8,4 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"gonum.org/v
+	"gonum.org/v1/gonum/stat"
+)
+
+/////////////////////
