@@ -4,4 +4,8 @@
 package main
 
 import (
-	"flag
+	"flag"
+	"fmt"
+	"os"
+
+	"gonum.org/v
