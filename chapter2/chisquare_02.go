@@ -14,4 +14,6 @@ import (
 ///////////////////////////////////////////////////////////////////////////////
 
 func RunMain() int {
-	// Define the observed frequen
+	// Define the observed frequencies
+	observed := []float64{
+		260.0, // This 
