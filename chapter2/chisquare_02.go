@@ -16,4 +16,5 @@ import (
 func RunMain() int {
 	// Define the observed frequencies
 	observed := []float64{
-		260.0, // This number is the number of observed with n
+		260.0, // This number is the number of observed with no regular exercise.
+		135.0, // This nu
