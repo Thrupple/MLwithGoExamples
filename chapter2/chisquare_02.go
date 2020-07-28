@@ -17,4 +17,5 @@ func RunMain() int {
 	// Define the observed frequencies
 	observed := []float64{
 		260.0, // This number is the number of observed with no regular exercise.
-		135.0, // This number is the number of observed with spor
+		135.0, // This number is the number of observed with sporatic exercise.
+		105.0, // This num
