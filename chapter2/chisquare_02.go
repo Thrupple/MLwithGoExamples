@@ -21,4 +21,6 @@ func RunMain() int {
 		105.0, // This number is the number of observed with regular exercise.
 	}
 	// Define the total observed.
-	totalO
+	totalObserved := 500.0
+
+	// Calculate the e
