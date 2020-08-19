@@ -25,4 +25,6 @@ func RunMain() int {
 
 	// Calculate the expected frequencies (again assuming the null Hypothesis).
 	expected := []float64{
-		totalObserved
+		totalObserved * 0.60,
+		totalObserved * 0.25,
+		totalObserv
