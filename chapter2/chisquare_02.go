@@ -27,4 +27,7 @@ func RunMain() int {
 	expected := []float64{
 		totalObserved * 0.60,
 		totalObserved * 0.25,
-		totalObserv
+		totalObserved * 0.15,
+	}
+
+	// Calculate the Chi
