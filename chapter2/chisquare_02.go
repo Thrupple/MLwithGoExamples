@@ -34,4 +34,4 @@ func RunMain() int {
 	chiSquare := stat.ChiSquare(observed, expected)
 
 	// Output the test statistic to standard out.
-	fm
+	fmt.Println("Observed", observed
