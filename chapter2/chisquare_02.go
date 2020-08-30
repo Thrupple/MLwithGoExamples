@@ -33,4 +33,5 @@ func RunMain() int {
 	// Calculate the ChiSquare test statistic.
 	chiSquare := stat.ChiSquare(observed, expected)
 
-	// Output
+	// Output the test statistic to standard out.
+	fm
