@@ -36,4 +36,9 @@ func RunMain() int {
 	// Output the test statistic to standard out.
 	fmt.Println("Observed", observed)
 	fmt.Println("Expected", expected)
-	fmt.Println("chiSquare",
+	fmt.Println("chiSquare", chiSquare)
+
+	return 0
+}
+
+////////////
