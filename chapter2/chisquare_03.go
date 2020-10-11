@@ -5,4 +5,8 @@
 package main
 
 import (
-	"fla
+	"flag"
+	"fmt"
+	"os"
+
+	"gonum.org/v1/gonum/s
