@@ -9,4 +9,6 @@ import (
 	"fmt"
 	"os"
 
-	"gonum.org/v1/gonum/s
+	"gonum.org/v1/gonum/stat"
+	"gonum.org/v1/gonum/stat/distuv"
+)
