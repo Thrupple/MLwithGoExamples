@@ -16,4 +16,5 @@ import (
 ///////////////////////////////////////////////////////////////////////////////
 
 func RunMain() int {
-	// Define the obs
+	// Define the observed frequencies
+	observed := []float64{
