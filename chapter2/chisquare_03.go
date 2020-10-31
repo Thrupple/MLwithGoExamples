@@ -18,3 +18,4 @@ import (
 func RunMain() int {
 	// Define the observed frequencies
 	observed := []float64{
+		260.0, // This number is the number of
