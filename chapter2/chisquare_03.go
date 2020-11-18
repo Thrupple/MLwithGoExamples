@@ -20,4 +20,4 @@ func RunMain() int {
 	observed := []float64{
 		260.0, // This number is the number of observed with no regular exercise.
 		135.0, // This number is the number of observed with sporatic exercise.
-		105.0, // This number 
+		105.0, // This number is the number of observed with regular exer
