@@ -29,4 +29,7 @@ func RunMain() int {
 	expected := []float64{
 		totalObserved * 0.60,
 		totalObserved * 0.25,
-		
+		totalObserved * 0.15,
+	}
+
+	// Calculate t
