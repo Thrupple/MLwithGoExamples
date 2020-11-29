@@ -25,4 +25,4 @@ func RunMain() int {
 	// Define the total observed.
 	totalObserved := 500.0
 
-	// Calculate the e
+	// Calculate the expected frequencies (again assuming the null Hypot
