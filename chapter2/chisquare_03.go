@@ -32,4 +32,5 @@ func RunMain() int {
 		totalObserved * 0.15,
 	}
 
-	// Calculate t
+	// Calculate the ChiSquare test statistic.
+	chiSq
