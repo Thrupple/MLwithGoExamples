@@ -40,4 +40,4 @@ func RunMain() int {
 	fmt.Println("Expected", expected)
 	fmt.Println("chiSquare", chiSquare)
 
-	// Create a
+	// Create a Chi-squared distribution with K de
