@@ -40,4 +40,5 @@ func RunMain() int {
 	fmt.Println("Expected", expected)
 	fmt.Println("chiSquare", chiSquare)
 
-	// Create a Chi-squared distribution with K de
+	// Create a Chi-squared distribution with K degrees of freedom.
+	// In this case 
