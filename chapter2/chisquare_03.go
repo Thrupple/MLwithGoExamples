@@ -41,4 +41,4 @@ func RunMain() int {
 	fmt.Println("chiSquare", chiSquare)
 
 	// Create a Chi-squared distribution with K degrees of freedom.
-	// In this case 
+	// In this case we have K=3-1=2, because the degrees of
