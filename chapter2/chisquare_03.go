@@ -43,4 +43,5 @@ func RunMain() int {
 	// Create a Chi-squared distribution with K degrees of freedom.
 	// In this case we have K=3-1=2, because the degrees of freedom
 	// for a Chi-squared distribution is the number of possible
-	// ca
+	// categories minus one.
+	chiDist := distuv.
