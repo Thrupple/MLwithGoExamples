@@ -44,4 +44,9 @@ func RunMain() int {
 	// In this case we have K=3-1=2, because the degrees of freedom
 	// for a Chi-squared distribution is the number of possible
 	// categories minus one.
-	chiDist := distuv.
+	chiDist := distuv.ChiSquared{
+		K:   2.0,
+		Src: nil,
+	}
+
+	// 
