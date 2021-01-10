@@ -51,3 +51,5 @@ func RunMain() int {
 
 	// Calculate the p-value for our specific test statistic.
 	pValue := chiDist.Prob(chiSquare)
+
+	// Output the p-value to standard
