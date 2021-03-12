@@ -3,4 +3,9 @@
 //  go run matrix_01.go
 package main
 
-impo
+import (
+	"flag"
+	"fmt"
+	"os"
+
+	"gonum.
