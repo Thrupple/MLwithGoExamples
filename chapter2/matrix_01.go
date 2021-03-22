@@ -12,4 +12,5 @@ import (
 )
 
 ///////////////////////////////////////////////////////////////////////////////
-// The core packages of the gonum suite are written in pur
+// The core packages of the gonum suite are written in pure Go with
+// some assembly. Inst
