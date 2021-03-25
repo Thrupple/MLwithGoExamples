@@ -19,4 +19,6 @@ import (
 //
 
 // RunMain runs the main program
-func RunMain
+func RunMain() int {
+
+	// Create a flat representation of 
