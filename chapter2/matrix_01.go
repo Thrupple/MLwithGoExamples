@@ -18,4 +18,5 @@ import (
 //   go get -u gonum.org/v1/gonum/...
 //
 
-// Ru
+// RunMain runs the main program
+func RunMain
