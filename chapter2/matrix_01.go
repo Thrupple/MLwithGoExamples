@@ -21,4 +21,5 @@ import (
 // RunMain runs the main program
 func RunMain() int {
 
-	// Create a flat representation of 
+	// Create a flat representation of our matrix.
+	components := []float64{1
