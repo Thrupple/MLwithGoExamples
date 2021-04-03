@@ -25,4 +25,5 @@ func RunMain() int {
 	components := []float64{1.2, -5.7, -2.4, 7.3}
 
 	// Form our matrix (the first argument is the number of
-	// rows and the second 
+	// rows and the second argument is the number of columns).
+	a := 
