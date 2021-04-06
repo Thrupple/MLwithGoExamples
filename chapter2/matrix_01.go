@@ -26,4 +26,6 @@ func RunMain() int {
 
 	// Form our matrix (the first argument is the number of
 	// rows and the second argument is the number of columns).
-	a := mat.NewDense(2, 2, component
+	a := mat.NewDense(2, 2, components)
+
+	// As a sanity check, output the matrix t
