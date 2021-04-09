@@ -31,4 +31,5 @@ func RunMain() int {
 	// As a sanity check, output the matrix to standard out.
 	fmt.Printf(" %v\n", mat.Formatted(a, mat.Prefix(" ")))
 
-	// Get a sin
+	// Get a single value from the matrix.
+	val :=
