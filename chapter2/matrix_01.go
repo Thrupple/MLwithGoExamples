@@ -29,4 +29,6 @@ func RunMain() int {
 	a := mat.NewDense(2, 2, components)
 
 	// As a sanity check, output the matrix to standard out.
-	fmt.Printf(" %v\n", mat.Format
+	fmt.Printf(" %v\n", mat.Formatted(a, mat.Prefix(" ")))
+
+	// Get a sin
