@@ -32,4 +32,5 @@ func RunMain() int {
 	fmt.Printf(" %v\n", mat.Formatted(a, mat.Prefix(" ")))
 
 	// Get a single value from the matrix.
-	val :=
+	val := a.At(0, 1)
+	fmt.Printf("The value of
