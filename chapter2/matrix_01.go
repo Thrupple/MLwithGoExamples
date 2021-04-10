@@ -33,4 +33,6 @@ func RunMain() int {
 
 	// Get a single value from the matrix.
 	val := a.At(0, 1)
-	fmt.Printf("The value of
+	fmt.Printf("The value of a at (0,1) is: %.2f\n\n", val)
+
+	// 
