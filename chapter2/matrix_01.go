@@ -37,4 +37,5 @@ func RunMain() int {
 
 	// Get the values in a specific column.
 	col := mat.Col(nil, 0, a)
-	fmt.Printf("The value
+	fmt.Printf("The values in the 1st column are: %v\n\n", col)
+
