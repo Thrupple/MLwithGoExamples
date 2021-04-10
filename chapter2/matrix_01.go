@@ -36,4 +36,5 @@ func RunMain() int {
 	fmt.Printf("The value of a at (0,1) is: %.2f\n\n", val)
 
 	// Get the values in a specific column.
-	c
+	col := mat.Col(nil, 0, a)
+	fmt.Printf("The value
