@@ -39,3 +39,5 @@ func RunMain() int {
 	col := mat.Col(nil, 0, a)
 	fmt.Printf("The values in the 1st column are: %v\n\n", col)
 
+	// Get the values in a kspecific row.
+	row :=
