@@ -40,4 +40,5 @@ func RunMain() int {
 	fmt.Printf("The values in the 1st column are: %v\n\n", col)
 
 	// Get the values in a kspecific row.
-	row :=
+	row := mat.Row(nil, 1, a)
+	fmt.Printf("The values 
