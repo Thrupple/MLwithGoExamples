@@ -44,4 +44,7 @@ func RunMain() int {
 	fmt.Printf("The values in the 2nd row are: %v\n\n", row)
 
 	// Modify a single element.
-	a.Set(0, 
+	a.Set(0, 1, 11.2)
+
+	// Modify an entire row.
+	a.Se
