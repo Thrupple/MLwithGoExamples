@@ -43,4 +43,5 @@ func RunMain() int {
 	row := mat.Row(nil, 1, a)
 	fmt.Printf("The values in the 2nd row are: %v\n\n", row)
 
-	// Modify 
+	// Modify a single element.
+	a.Set(0, 
