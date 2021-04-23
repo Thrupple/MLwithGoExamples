@@ -47,4 +47,6 @@ func RunMain() int {
 	a.Set(0, 1, 11.2)
 
 	// Modify an entire row.
-	a.Se
+	a.SetRow(0, []float64{14.3, -4.2})
+
+	/
