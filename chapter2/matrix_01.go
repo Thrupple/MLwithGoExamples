@@ -52,4 +52,5 @@ func RunMain() int {
 	// Modify an entire column.
 	a.SetCol(0, []float64{1.7, -0.3})
 
-	// As a sanity check, output the matrix to standard out
+	// As a sanity check, output the matrix to standard out.
+	fmt.Printf(" %v\n", mat.Formatt
