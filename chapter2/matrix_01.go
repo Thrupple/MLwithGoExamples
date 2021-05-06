@@ -53,4 +53,9 @@ func RunMain() int {
 	a.SetCol(0, []float64{1.7, -0.3})
 
 	// As a sanity check, output the matrix to standard out.
-	fmt.Printf(" %v\n", mat.Formatt
+	fmt.Printf(" %v\n", mat.Formatted(a, mat.Prefix(" ")))
+
+	return 0
+}
+
+/////
