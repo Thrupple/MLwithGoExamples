@@ -7,4 +7,9 @@ import (
 	"flag"
 	"fmt"
 	"math"
-	"o
+	"os"
+
+	"gonum.org/v1/gonum/mat"
+)
+
+////////
