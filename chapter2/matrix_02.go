@@ -19,4 +19,4 @@ import (
 //   go get -u gonum.org/v1/gonum/...
 //
 
-// RunMain runs the ma
+// RunMain runs the main program. Demonstrates addin
