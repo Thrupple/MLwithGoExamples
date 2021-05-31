@@ -21,4 +21,5 @@ import (
 
 // RunMain runs the main program. Demonstrates adding, multiplying, powers,
 // applying function to elements
-func RunMain() i
+func RunMain() int {
+	// Create two matrices 
