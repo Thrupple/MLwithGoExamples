@@ -19,4 +19,5 @@ import (
 //   go get -u gonum.org/v1/gonum/...
 //
 
-// RunMain runs the main program. Demonstrates addin
+// RunMain runs the main program. Demonstrates adding, multiplying, powers,
+// applying funct
