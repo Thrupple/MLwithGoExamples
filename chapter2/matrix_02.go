@@ -22,4 +22,5 @@ import (
 // RunMain runs the main program. Demonstrates adding, multiplying, powers,
 // applying function to elements
 func RunMain() int {
-	// Create two matrices 
+	// Create two matrices of the same size, a and b.
+	a := m
