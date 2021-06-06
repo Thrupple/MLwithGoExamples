@@ -25,3 +25,5 @@ func RunMain() int {
 	// Create two matrices of the same size, a and b.
 	a := mat.NewDense(3, 3, []float64{1, 2, 3, 0, 4, 5, 0, 0, 6})
 	b := mat.NewDense(3, 3, []float64{8, 9, 10, 1, 4, 2, 9, 0, 2})
+
+	fmt.Printf("a = %v\n\n", mat.Formatted(a
