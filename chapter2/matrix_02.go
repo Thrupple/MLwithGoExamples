@@ -23,4 +23,4 @@ import (
 // applying function to elements
 func RunMain() int {
 	// Create two matrices of the same size, a and b.
-	a := m
+	a := mat.NewDense(3, 3, []float64{1, 2, 3, 0, 4, 5, 0, 
