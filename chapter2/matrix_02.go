@@ -27,4 +27,4 @@ func RunMain() int {
 	b := mat.NewDense(3, 3, []float64{8, 9, 10, 1, 4, 2, 9, 0, 2})
 
 	fmt.Printf("a = %v\n\n", mat.Formatted(a, mat.Prefix("    ")))
-	fmt.Printf("b
+	fmt.Printf("b = %v\n\n", mat.Formatted(b, mat.Prefix("    "))
