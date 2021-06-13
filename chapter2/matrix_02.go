@@ -29,4 +29,5 @@ func RunMain() int {
 	fmt.Printf("a = %v\n\n", mat.Formatted(a, mat.Prefix("    ")))
 	fmt.Printf("b = %v\n\n", mat.Formatted(b, mat.Prefix("    ")))
 
-	// Create a third matrix of a diff
+	// Create a third matrix of a different size.
+	c := mat.NewDense(3, 2, []float64
