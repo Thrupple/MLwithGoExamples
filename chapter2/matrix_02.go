@@ -30,4 +30,7 @@ func RunMain() int {
 	fmt.Printf("b = %v\n\n", mat.Formatted(b, mat.Prefix("    ")))
 
 	// Create a third matrix of a different size.
-	c := mat.NewDense(3, 2, []float64
+	c := mat.NewDense(3, 2, []float64{3, 2, 1, 4, 0, 8})
+
+	// Add a and b.
+	d
