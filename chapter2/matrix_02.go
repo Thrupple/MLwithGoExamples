@@ -33,4 +33,5 @@ func RunMain() int {
 	c := mat.NewDense(3, 2, []float64{3, 2, 1, 4, 0, 8})
 
 	// Add a and b.
-	d
+	d := mat.NewDense(0, 0, nil)
+	d.Add(a
