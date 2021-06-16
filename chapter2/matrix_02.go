@@ -36,4 +36,6 @@ func RunMain() int {
 	d := mat.NewDense(0, 0, nil)
 	d.Add(a, b)
 	fd := mat.Formatted(d, mat.Prefix("            "))
-	fmt.Prin
+	fmt.Printf("d = a + b = %0.4v\n\n", fd)
+
+	/
