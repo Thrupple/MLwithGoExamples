@@ -35,4 +35,5 @@ func RunMain() int {
 	// Add a and b.
 	d := mat.NewDense(0, 0, nil)
 	d.Add(a, b)
-	fd := mat.Formatted(d, ma
+	fd := mat.Formatted(d, mat.Prefix("            "))
+	fmt.Prin
