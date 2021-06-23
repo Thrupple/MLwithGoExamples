@@ -39,4 +39,6 @@ func RunMain() int {
 	fmt.Printf("d = a + b = %0.4v\n\n", fd)
 
 	// Multiply a and c.
-	f := mat.NewDense(0, 0,
+	f := mat.NewDense(0, 0, nil)
+	f.Mul(a, c)
+	ff := mat.Forma
