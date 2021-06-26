@@ -45,4 +45,6 @@ func RunMain() int {
 	fmt.Printf("f = a c = %0.4v\n\n", ff)
 
 	// Raising a matrix to a power.
-	g := mat.NewDense(0, 0, nil
+	g := mat.NewDense(0, 0, nil)
+	g.Pow(a, 5)
+	fg := mat.Formatted(g, mat.P
