@@ -41,4 +41,5 @@ func RunMain() int {
 	// Multiply a and c.
 	f := mat.NewDense(0, 0, nil)
 	f.Mul(a, c)
-	ff := mat.Forma
+	ff := mat.Formatted(f, mat.Prefix("          "))
+	fmt.Printf(
