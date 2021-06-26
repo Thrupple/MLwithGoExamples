@@ -42,4 +42,6 @@ func RunMain() int {
 	f := mat.NewDense(0, 0, nil)
 	f.Mul(a, c)
 	ff := mat.Formatted(f, mat.Prefix("          "))
-	fmt.Printf(
+	fmt.Printf("f = a c = %0.4v\n\n", ff)
+
+	// Raising a matr
