@@ -47,4 +47,5 @@ func RunMain() int {
 	// Raising a matrix to a power.
 	g := mat.NewDense(0, 0, nil)
 	g.Pow(a, 5)
-	fg := mat.Formatted(g, mat.P
+	fg := mat.Formatted(g, mat.Prefix("          "))
+	fmt.Printf("g = 
