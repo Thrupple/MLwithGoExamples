@@ -51,4 +51,5 @@ func RunMain() int {
 	fmt.Printf("g = a^5 = %0.4v\n\n", fg)
 
 	// Apply a function to each of the elements of a.
-	h := mat.NewDe
+	h := mat.NewDense(0, 0, nil)
+	sqrt := func(_, _ int, v float
