@@ -48,4 +48,6 @@ func RunMain() int {
 	g := mat.NewDense(0, 0, nil)
 	g.Pow(a, 5)
 	fg := mat.Formatted(g, mat.Prefix("          "))
-	fmt.Printf("g = 
+	fmt.Printf("g = a^5 = %0.4v\n\n", fg)
+
+	// Apply a function to eac
