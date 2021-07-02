@@ -50,4 +50,5 @@ func RunMain() int {
 	fg := mat.Formatted(g, mat.Prefix("          "))
 	fmt.Printf("g = a^5 = %0.4v\n\n", fg)
 
-	// Apply a function to eac
+	// Apply a function to each of the elements of a.
+	h := mat.NewDe
