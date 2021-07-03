@@ -52,4 +52,4 @@ func RunMain() int {
 
 	// Apply a function to each of the elements of a.
 	h := mat.NewDense(0, 0, nil)
-	sqrt := func(_, _ int, v float
+	sqrt := func(_, _ int, v float64) float64 { return math.Sqrt(v
