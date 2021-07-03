@@ -54,4 +54,5 @@ func RunMain() int {
 	h := mat.NewDense(0, 0, nil)
 	sqrt := func(_, _ int, v float64) float64 { return math.Sqrt(v) }
 	h.Apply(sqrt, a)
-	fh := mat.Formatted(
+	fh := mat.Formatted(h, mat.Prefix("              "))
+	fmt.Pri
