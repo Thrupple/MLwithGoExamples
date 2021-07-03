@@ -55,4 +55,6 @@ func RunMain() int {
 	sqrt := func(_, _ int, v float64) float64 { return math.Sqrt(v) }
 	h.Apply(sqrt, a)
 	fh := mat.Formatted(h, mat.Prefix("              "))
-	fmt.Pri
+	fmt.Printf("h = sqrt(a) = %0.4v\n\n", fh)
+
+	return 0
