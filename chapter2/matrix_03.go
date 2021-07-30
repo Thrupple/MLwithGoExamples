@@ -13,4 +13,5 @@ import (
 )
 
 ///////////////////////////////////////////////////////////////////////////////
-// The core packages of the gonum suit
+// The core packages of the gonum suite are written in pure Go with
+// some ass
