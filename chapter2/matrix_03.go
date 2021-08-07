@@ -20,4 +20,6 @@ import (
 //
 
 // RunMain runs the main program. Demonstrates adding, multiplying, powers,
-// applying function 
+// applying function to elements
+func RunMain() int {
+	// Cr
