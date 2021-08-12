@@ -22,4 +22,5 @@ import (
 // RunMain runs the main program. Demonstrates adding, multiplying, powers,
 // applying function to elements
 func RunMain() int {
-	// Cr
+	// Create a new matrix a.
+	a := mat.NewDense
