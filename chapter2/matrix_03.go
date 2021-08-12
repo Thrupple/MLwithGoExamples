@@ -23,4 +23,6 @@ import (
 // applying function to elements
 func RunMain() int {
 	// Create a new matrix a.
-	a := mat.NewDense(3, 3, []float64{1, 2, 3, 0, 4, 5, 0, 0, 
+	a := mat.NewDense(3, 3, []float64{1, 2, 3, 0, 4, 5, 0, 0, 6})
+
+	fmt.Printf("a = %v\n\n", ma
