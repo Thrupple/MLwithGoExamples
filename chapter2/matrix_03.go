@@ -27,4 +27,5 @@ func RunMain() int {
 
 	fmt.Printf("a = %v\n\n", mat.Formatted(a, mat.Prefix("    ")))
 
-	// Compute and output the transpose of the mat
+	// Compute and output the transpose of the matrix.
+	ft := mat.Formatted(a.T(), mat.Pre
