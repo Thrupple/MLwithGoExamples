@@ -25,4 +25,6 @@ func RunMain() int {
 	// Create a new matrix a.
 	a := mat.NewDense(3, 3, []float64{1, 2, 3, 0, 4, 5, 0, 0, 6})
 
-	fmt.Printf("a = %v\n\n", ma
+	fmt.Printf("a = %v\n\n", mat.Formatted(a, mat.Prefix("    ")))
+
+	// Compute a
