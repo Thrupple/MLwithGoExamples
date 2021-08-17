@@ -31,4 +31,6 @@ func RunMain() int {
 	ft := mat.Formatted(a.T(), mat.Prefix("      "))
 	fmt.Printf("a^T = %v\n\n", ft)
 
-	// Compute and output the d
+	// Compute and output the determinant of a.
+	deta := mat.Det(a)
+	
