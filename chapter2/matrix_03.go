@@ -33,4 +33,6 @@ func RunMain() int {
 
 	// Compute and output the determinant of a.
 	deta := mat.Det(a)
-	
+	fmt.Printf("det(a) = %.2f\n\n", deta)
+
+	//
