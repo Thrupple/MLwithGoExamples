@@ -35,4 +35,4 @@ func RunMain() int {
 	deta := mat.Det(a)
 	fmt.Printf("det(a) = %.2f\n\n", deta)
 
-	//
+	// Compute and output the inverse of
