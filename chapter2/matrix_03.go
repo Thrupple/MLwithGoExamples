@@ -36,4 +36,5 @@ func RunMain() int {
 	fmt.Printf("det(a) = %.2f\n\n", deta)
 
 	// Compute and output the inverse of a.
-	aInverse := mat.NewDense
+	aInverse := mat.NewDense(0, 0, nil)
+	if err := aInver
