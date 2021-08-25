@@ -40,4 +40,4 @@ func RunMain() int {
 	if err := aInverse.Inverse(a); err != nil {
 		log.Fatal(err)
 	}
-	
+	fi := mat.Formatted(aInverse, m
