@@ -37,4 +37,7 @@ func RunMain() int {
 
 	// Compute and output the inverse of a.
 	aInverse := mat.NewDense(0, 0, nil)
-	if err := aInver
+	if err := aInverse.Inverse(a); err != nil {
+		log.Fatal(err)
+	}
+	
