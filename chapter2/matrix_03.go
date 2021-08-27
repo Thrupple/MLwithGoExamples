@@ -41,4 +41,9 @@ func RunMain() int {
 		log.Fatal(err)
 	}
 	fi := mat.Formatted(aInverse, mat.Prefix("       "))
-	fmt.Printf("a
+	fmt.Printf("a^-1 = %v\n\n", fi)
+
+	return 0
+}
+
+///////
