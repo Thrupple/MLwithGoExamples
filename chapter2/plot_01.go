@@ -1,2 +1,3 @@
 // Usage:
-//  go get -u gonum
+//  go get -u gonum.org/v1/plot/...
+//  go run plot_01.
