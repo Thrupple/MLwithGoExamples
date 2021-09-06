@@ -50,4 +50,5 @@ func RunMain() int {
 
 func main() {
 	flag.Parse()
-	os.Ex
+	os.Exit(RunMain())
+}
