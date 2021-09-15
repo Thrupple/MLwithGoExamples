@@ -13,4 +13,5 @@ import (
 	"path"
 
 	"github.com/djthorpe/MachineLearning/util"
-	"gonum
+	"gonum.org/v1/plot"
+	"gonum.org/v1/plot/plotte
