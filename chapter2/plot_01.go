@@ -12,4 +12,5 @@ import (
 	"os"
 	"path"
 
-	"github.com/djthor
+	"github.com/djthorpe/MachineLearning/util"
+	"gonum
