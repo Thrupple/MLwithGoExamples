@@ -25,4 +25,5 @@ var (
 )
 
 func RunMain() int {
-	if f
+	if flag.NArg() != 1 {
+		log.Println("Expected file a
