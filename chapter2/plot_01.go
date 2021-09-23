@@ -21,4 +21,8 @@ import (
 ///////////////////////////////////////////////////////////////////////////////
 
 var (
-	ErrEmpty = fmt.Errorf("Empty
+	ErrEmpty = fmt.Errorf("Empty string")
+)
+
+func RunMain() int {
+	if f
