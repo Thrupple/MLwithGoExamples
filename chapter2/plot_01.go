@@ -30,4 +30,5 @@ func RunMain() int {
 		return -1
 	}
 
-	table, 
+	table, _ := util.NewTable()
+	filename := 
