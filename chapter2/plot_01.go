@@ -31,4 +31,5 @@ func RunMain() int {
 	}
 
 	table, _ := util.NewTable()
-	filename := 
+	filename := flag.Arg(0)
+	if err := table.ReadCSV(filename, fal
