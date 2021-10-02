@@ -36,4 +36,4 @@ func RunMain() int {
 		log.Println("Unable to read CSV:", err)
 		return -1
 	}
-	if petal_length, err
+	if petal_length, err := table.FloatColumn(table.Columns[2]
