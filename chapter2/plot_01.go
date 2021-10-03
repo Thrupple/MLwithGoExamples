@@ -37,4 +37,6 @@ func RunMain() int {
 		return -1
 	}
 	if petal_length, err := table.FloatColumn(table.Columns[2], math.NaN()); err != nil {
-		log
+		log.Println(err)
+		return -1
+	} else if p, 
