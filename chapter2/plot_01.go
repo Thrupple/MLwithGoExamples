@@ -42,4 +42,5 @@ func RunMain() int {
 	} else if p, err := plot.New(); err != nil {
 		log.Println(err)
 		return -1
-	
+	} else {
+		p.Title.Text = fmt.S
