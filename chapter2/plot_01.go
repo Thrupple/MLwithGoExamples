@@ -40,4 +40,6 @@ func RunMain() int {
 		log.Println(err)
 		return -1
 	} else if p, err := plot.New(); err != nil {
+		log.Println(err)
+		return -1
 	
