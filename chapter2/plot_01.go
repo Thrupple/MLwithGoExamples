@@ -39,4 +39,5 @@ func RunMain() int {
 	if petal_length, err := table.FloatColumn(table.Columns[2], math.NaN()); err != nil {
 		log.Println(err)
 		return -1
-	} else if p, 
+	} else if p, err := plot.New(); err != nil {
+	
