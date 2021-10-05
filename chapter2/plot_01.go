@@ -43,4 +43,6 @@ func RunMain() int {
 		log.Println(err)
 		return -1
 	} else {
-		p.Title.Text = fmt.S
+		p.Title.Text = fmt.Sprintf("Histogram of petal_length")
+
+		// Cre
