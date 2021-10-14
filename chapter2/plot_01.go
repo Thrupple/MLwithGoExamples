@@ -46,4 +46,4 @@ func RunMain() int {
 		p.Title.Text = fmt.Sprintf("Histogram of petal_length")
 
 		// Create a histogram of our values drawn from the standard normal
-		h, err := p
+		h, err := plotter.NewHist(plotter.Values(petal_length
