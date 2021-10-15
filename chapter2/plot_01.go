@@ -53,4 +53,6 @@ func RunMain() int {
 		}
 
 		// Normalize the histogram.
-		h.Normalize(1
+		h.Normalize(1)
+
+		// Add the histogram to 
