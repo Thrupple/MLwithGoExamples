@@ -52,4 +52,5 @@ func RunMain() int {
 			return -1
 		}
 
-		// 
+		// Normalize the histogram.
+		h.Normalize(1
