@@ -48,4 +48,8 @@ func RunMain() int {
 		// Create a histogram of our values drawn from the standard normal
 		h, err := plotter.NewHist(plotter.Values(petal_length), 16)
 		if err != nil {
-			log.Printl
+			log.Println(err)
+			return -1
+		}
+
+		// 
