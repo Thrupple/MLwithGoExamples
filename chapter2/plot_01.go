@@ -55,4 +55,7 @@ func RunMain() int {
 		// Normalize the histogram.
 		h.Normalize(1)
 
-		// Add the histogram to 
+		// Add the histogram to the plot.
+		p.Add(h)
+
+		// Save the pl
