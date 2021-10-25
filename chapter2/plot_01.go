@@ -58,4 +58,6 @@ func RunMain() int {
 		// Add the histogram to the plot.
 		p.Add(h)
 
-		// Save the pl
+		// Save the plot to a PNG file.
+
+		if err := p.Save(4*vg.In
