@@ -60,4 +60,4 @@ func RunMain() int {
 
 		// Save the plot to a PNG file.
 
-		if err := p.Save(4*vg.In
+		if err := p.Save(4*vg.Inch, 4*vg.Inch, path.Base(filename)+"
