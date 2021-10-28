@@ -61,4 +61,9 @@ func RunMain() int {
 		// Save the plot to a PNG file.
 
 		if err := p.Save(4*vg.Inch, 4*vg.Inch, path.Base(filename)+"_hist.png"); err != nil {
-			log.
+			log.Println(err)
+			return -1
+		}
+	}
+
+	r
