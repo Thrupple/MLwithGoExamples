@@ -1,2 +1,6 @@
 // Usage:
-//  go run stats_01.go iris.c
+//  go run stats_01.go iris.csv
+package main
+
+import (
+	"encoding/csv
