@@ -8,4 +8,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"strc
+	"strconv"
+	"strings"
+
+	"gonum.org/v1/go
