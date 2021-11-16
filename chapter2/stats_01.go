@@ -3,4 +3,9 @@
 package main
 
 import (
-	"encoding/csv
+	"encoding/csv"
+	"flag"
+	"fmt"
+	"log"
+	"os"
+	"strc
