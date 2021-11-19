@@ -11,4 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"gonum.org/v1/go
+	"gonum.org/v1/gonum/stat"
+)
+
+/////////////////////
