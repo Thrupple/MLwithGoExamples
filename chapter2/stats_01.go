@@ -17,4 +17,4 @@ import (
 ///////////////////////////////////////////////////////////////////////////////
 
 var (
-	flagSkipHeader = flag.Bool("ski
+	flagSkipHeader = flag.Bool("skip_header", true, "Skip CSV header row")
