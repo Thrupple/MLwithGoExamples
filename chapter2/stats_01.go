@@ -18,3 +18,7 @@ import (
 
 var (
 	flagSkipHeader = flag.Bool("skip_header", true, "Skip CSV header row")
+)
+
+var (
+	ErrEmpty = fmt.Errorf("
