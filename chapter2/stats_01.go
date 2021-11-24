@@ -21,4 +21,7 @@ var (
 )
 
 var (
-	ErrEmpty = fmt.Errorf("
+	ErrEmpty = fmt.Errorf("Empty string")
+)
+
+////////////////
