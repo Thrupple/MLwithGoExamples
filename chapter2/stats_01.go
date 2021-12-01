@@ -26,4 +26,6 @@ var (
 
 ///////////////////////////////////////////////////////////////////////////////
 
-func ParseFloat(string_value string) (float
+func ParseFloat(string_value string) (float64, error) {
+	// Check for empty value
+	if len(str
