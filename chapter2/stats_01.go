@@ -31,4 +31,5 @@ func ParseFloat(string_value string) (float64, error) {
 	if len(strings.TrimSpace(string_value)) == 0 {
 		return 0.0, ErrEmpty
 	}
-	// 
+	// Convert to integer
+	if float_value, err := s
