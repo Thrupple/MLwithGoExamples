@@ -28,4 +28,5 @@ var (
 
 func ParseFloat(string_value string) (float64, error) {
 	// Check for empty value
-	if len(str
+	if len(strings.TrimSpace(string_value)) == 0 {
+		
