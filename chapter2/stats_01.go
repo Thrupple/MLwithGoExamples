@@ -32,4 +32,5 @@ func ParseFloat(string_value string) (float64, error) {
 		return 0.0, ErrEmpty
 	}
 	// Convert to integer
-	if float_value, err := strconv.ParseFloat(string_value, 64); e
+	if float_value, err := strconv.ParseFloat(string_value, 64); err != nil {
+		return 0.0, er
