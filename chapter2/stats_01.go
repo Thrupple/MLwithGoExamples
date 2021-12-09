@@ -39,4 +39,5 @@ func ParseFloat(string_value string) (float64, error) {
 	}
 }
 
-func AnalyseSepalLength(rows [
+func AnalyseSepalLength(rows [][]string) error {
+	sepal_length := 
