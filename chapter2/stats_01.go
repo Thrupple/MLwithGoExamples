@@ -40,4 +40,5 @@ func ParseFloat(string_value string) (float64, error) {
 }
 
 func AnalyseSepalLength(rows [][]string) error {
-	sepal_length := 
+	sepal_length := make([]float64, 0)
+	for line_number, row := range rows
