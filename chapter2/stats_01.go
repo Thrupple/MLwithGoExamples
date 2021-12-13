@@ -44,3 +44,6 @@ func AnalyseSepalLength(rows [][]string) error {
 	for line_number, row := range rows {
 		if len(row) != 5 {
 			return fmt.Errorf("Line %v: Expected 5 values", line_number+1)
+		}
+		// Skip header
+		if *flag
