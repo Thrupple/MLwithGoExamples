@@ -48,3 +48,6 @@ func AnalyseSepalLength(rows [][]string) error {
 		// Skip header
 		if *flagSkipHeader && line_number == 0 {
 			continue
+		}
+		// Retrieve sepal_length
+		
