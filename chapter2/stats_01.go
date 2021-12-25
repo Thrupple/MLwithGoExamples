@@ -53,4 +53,8 @@ func AnalyseSepalLength(rows [][]string) error {
 		if sepal_length_value, err := ParseFloat(row[0]); err != nil {
 			return err
 		} else {
-			sepal_length = append(sepal_le
+			sepal_length = append(sepal_length, sepal_length_value)
+		}
+	}
+
+	mod
