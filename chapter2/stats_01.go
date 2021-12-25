@@ -57,4 +57,4 @@ func AnalyseSepalLength(rows [][]string) error {
 		}
 	}
 
-	mod
+	modeVal, modeCount := stat.Mode(se
