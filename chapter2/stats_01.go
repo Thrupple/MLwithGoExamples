@@ -59,4 +59,5 @@ func AnalyseSepalLength(rows [][]string) error {
 
 	modeVal, modeCount := stat.Mode(sepal_length, nil)
 	fmt.Printf("\nSepal Length Summary Statistics:\n")
-	fmt.Printf("Mean value: %0.2f\n"
+	fmt.Printf("Mean value: %0.2f\n", stat.Mean(sepal_length, nil))
+	fmt.Print
