@@ -65,4 +65,6 @@ func AnalyseSepalLength(rows [][]string) error {
 	return nil
 }
 
-func RunMain()
+func RunMain() int {
+	if flag.NArg() != 1 {
+		log.Println
