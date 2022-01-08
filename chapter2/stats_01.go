@@ -67,4 +67,5 @@ func AnalyseSepalLength(rows [][]string) error {
 
 func RunMain() int {
 	if flag.NArg() != 1 {
-		log.Println
+		log.Println("Expected file argument")
+		
