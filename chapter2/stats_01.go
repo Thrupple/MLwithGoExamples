@@ -70,4 +70,6 @@ func RunMain() int {
 		log.Println("Expected file argument")
 		return -1
 	}
-	if f, err := os.Open(flag.Ar
+	if f, err := os.Open(flag.Arg(0)); err != nil {
+		log.Println(err)
+		
