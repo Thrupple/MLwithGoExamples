@@ -72,4 +72,7 @@ func RunMain() int {
 	}
 	if f, err := os.Open(flag.Arg(0)); err != nil {
 		log.Println(err)
-		
+		return -1
+	} else {
+		defer f.Close()
+		r :=
