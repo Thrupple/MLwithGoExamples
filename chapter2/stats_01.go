@@ -75,4 +75,5 @@ func RunMain() int {
 		return -1
 	} else {
 		defer f.Close()
-		r :=
+		r := csv.NewReader(f)
+		if rows, err := r.ReadAll
