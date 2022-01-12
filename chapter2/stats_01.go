@@ -77,4 +77,6 @@ func RunMain() int {
 		defer f.Close()
 		r := csv.NewReader(f)
 		if rows, err := r.ReadAll(); err != nil {
-			log.Println(er
+			log.Println(err)
+			return -1
+		} else if err := Analyse
