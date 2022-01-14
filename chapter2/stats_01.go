@@ -79,4 +79,4 @@ func RunMain() int {
 		if rows, err := r.ReadAll(); err != nil {
 			log.Println(err)
 			return -1
-		} else if err := Analyse
+		} else if err := AnalyseSepalLength(rows); err != nil {
