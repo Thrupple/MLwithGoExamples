@@ -1,2 +1,3 @@
 // Usage:
-//  go 
+//  go get -u gonum.org/v1/gonum/...
+//
