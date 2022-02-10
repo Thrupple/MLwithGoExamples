@@ -102,3 +102,23 @@ func RunMain() int {
 	if f, err := os.Open(flag.Arg(0)); err != nil {
 		log.Println(err)
 		return -1
+	} else {
+		defer f.Close()
+		r := csv.NewReader(f)
+		if rows, err := r.ReadAll(); err != nil {
+			log.Println(err)
+			return -1
+		} else if err := AnalysePetalLength(rows); err != nil {
+			log.Println(err)
+			return -1
+		}
+	}
+	return 0
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func main() {
+	flag.Parse()
+	os.Exit(RunMain())
+}
