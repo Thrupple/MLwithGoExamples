@@ -17,3 +17,6 @@ import (
 // some assembly. Installation is done using go get:
 //
 //   go get -u gonum.org/v1/gonum/...
+//
+
+// RunMain runs the main progra
