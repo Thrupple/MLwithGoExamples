@@ -24,3 +24,4 @@ func RunMain() int {
 
 	// Initialize a couple of "vectors" represented as slices.
 	vectorA := mat.NewVecDense(3, []float64{11.0, 5.2, -1.3})
+	vectorB := mat.NewVecDense(3, []float
