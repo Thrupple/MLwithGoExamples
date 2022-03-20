@@ -22,4 +22,4 @@ import (
 // RunMain runs the main program
 func RunMain() int {
 
-	// In
+	// Initialize a couple of "vectors" repre
