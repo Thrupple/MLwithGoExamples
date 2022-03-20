@@ -22,4 +22,5 @@ import (
 // RunMain runs the main program
 func RunMain() int {
 
-	// Initialize a couple of "vectors" repre
+	// Initialize a couple of "vectors" represented as slices.
+	vectorA := mat.NewV
