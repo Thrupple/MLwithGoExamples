@@ -27,4 +27,5 @@ func RunMain() int {
 	vectorB := mat.NewVecDense(3, []float64{-7.2, 4.2, 5.1})
 
 	// Compute the dot product of A and B
-	dotProduct := mat.Dot
+	dotProduct := mat.Dot(vectorA, vectorB)
+	fmt.Printf("The
