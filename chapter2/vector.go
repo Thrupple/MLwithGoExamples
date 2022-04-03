@@ -30,4 +30,5 @@ func RunMain() int {
 	dotProduct := mat.Dot(vectorA, vectorB)
 	fmt.Printf("The dot product of A and B is: %0.2f\n", dotProduct)
 
-	// Scale each element 
+	// Scale each element of A by 1.5.
+	vectorA.ScaleVec(1.5, vectorA)
