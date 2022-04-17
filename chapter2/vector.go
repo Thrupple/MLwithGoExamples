@@ -32,4 +32,6 @@ func RunMain() int {
 
 	// Scale each element of A by 1.5.
 	vectorA.ScaleVec(1.5, vectorA)
-	fmt.Printf("Scaling A by 1.5 gives: 
+	fmt.Printf("Scaling A by 1.5 gives: %v\n", vectorA)
+
+	// Compute the norm/le
