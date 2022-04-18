@@ -35,4 +35,5 @@ func RunMain() int {
 	fmt.Printf("Scaling A by 1.5 gives: %v\n", vectorA)
 
 	// Compute the norm/length of B.
-	normB := blas64.Nr
+	normB := blas64.Nrm2(3, vectorB.RawVector())
+	fmt.Printf
