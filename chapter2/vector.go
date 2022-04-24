@@ -38,4 +38,7 @@ func RunMain() int {
 	normB := blas64.Nrm2(3, vectorB.RawVector())
 	fmt.Printf("The norm/length of B is: %0.2f\n", normB)
 
-	r
+	return 0
+}
+
+///////////////////////
