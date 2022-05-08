@@ -14,3 +14,43 @@ import (
 )
 
 ///////////////////////////////////////////////////////////////////////////////
+
+func RunMain() int {
+	if flag.NArg() != 1 {
+		log.Println("Expected file argument")
+		return -1
+	}
+
+	table, _ := util.NewTable()
+	filename := flag.Arg(0)
+	if err := table.ReadCSV(filename, false, true, true); err != nil {
+		log.Println("Unable to read CSV:", err)
+		return -1
+	}
+
+	// Calculate the mean absolute error and mean squared error.
+	if observed, err := table.UintColumn(table.Columns[0], 0); err != nil {
+		log.Println(err)
+		return -1
+	} else if predicted, err := table.UintColumn(table.Columns[1], 0); err != nil {
+		log.Println(err)
+		return -1
+	} else if len(observed) != len(predicted) {
+		log.Println("Observed and predicted samples mismatch")
+		return -1
+	} else {
+		var true_positive, false_positive uint
+		for i := range observed {
+			if observed[i] == predicted[i] {
+				true_positive++
+			} else if observed[i] != predicted[i] {
+				false_positive++
+			}
+		}
+		fmt.Println(table)
+		fmt.Println("true_positive=", true_positive)
+		fmt.Println("false_positive=", false_positive)
+		fmt.Printf("accuracy= %0.2f\n", float64(true_positive)/float64(true_positive+false_positive))
+	}
+	return 0
+}
