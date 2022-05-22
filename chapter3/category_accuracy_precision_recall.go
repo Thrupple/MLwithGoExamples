@@ -9,4 +9,7 @@ import (
 	"os"
 
 	// Utilities for reading data
-	"github.com/djthor
+	"github.com/djthorpe/MachineLearning/util"
+)
+
+/////////////////
