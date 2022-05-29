@@ -21,4 +21,5 @@ func RunMain() int {
 	}
 
 	table, _ := util.NewTable()
-	filename := fl
+	filename := flag.Arg(0)
+	if err := table.ReadC
