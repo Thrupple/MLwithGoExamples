@@ -22,4 +22,4 @@ func RunMain() int {
 
 	table, _ := util.NewTable()
 	filename := flag.Arg(0)
-	if err := table.ReadC
+	if err := table.ReadCSV(filename, false, true, true); er
