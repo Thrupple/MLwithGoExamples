@@ -27,4 +27,4 @@ func RunMain() int {
 		return -1
 	}
 
-	
+	// Calculate the mean absolut
