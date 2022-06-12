@@ -27,4 +27,4 @@ func RunMain() int {
 		return -1
 	}
 
-	// Calculate the mean absolut
+	// Calculate the mean absolute error and mean squared error.
