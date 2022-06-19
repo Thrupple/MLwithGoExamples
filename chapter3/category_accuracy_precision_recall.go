@@ -31,4 +31,4 @@ func RunMain() int {
 	if observed, err := table.UintColumn(table.Columns[0], 0); err != nil {
 		log.Println(err)
 		return -1
-	} 
+	} else if predicted, err := table.UintColumn(t
