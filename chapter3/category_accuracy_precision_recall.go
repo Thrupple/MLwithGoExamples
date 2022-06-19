@@ -29,4 +29,6 @@ func RunMain() int {
 
 	// Calculate the mean absolute error and mean squared error.
 	if observed, err := table.UintColumn(table.Columns[0], 0); err != nil {
-		log.
+		log.Println(err)
+		return -1
+	} 
