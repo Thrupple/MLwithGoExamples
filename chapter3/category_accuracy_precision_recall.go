@@ -34,4 +34,5 @@ func RunMain() int {
 	} else if predicted, err := table.UintColumn(table.Columns[1], 0); err != nil {
 		log.Println(err)
 		return -1
-	} els
+	} else if len(observed) != len(predicted) {
+		lo
