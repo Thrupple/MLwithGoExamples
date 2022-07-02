@@ -35,4 +35,4 @@ func RunMain() int {
 		log.Println(err)
 		return -1
 	} else if len(observed) != len(predicted) {
-		lo
+		log.Println("Observed and predicted sampl
