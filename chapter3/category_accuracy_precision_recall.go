@@ -35,4 +35,6 @@ func RunMain() int {
 		log.Println(err)
 		return -1
 	} else if len(observed) != len(predicted) {
-		log.Println("Observed and predicted sampl
+		log.Println("Observed and predicted samples mismatch")
+		return -1
+	} el
