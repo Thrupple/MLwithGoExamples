@@ -37,4 +37,4 @@ func RunMain() int {
 	} else if len(observed) != len(predicted) {
 		log.Println("Observed and predicted samples mismatch")
 		return -1
-	} el
+	} else if classes, err := table.UintV
