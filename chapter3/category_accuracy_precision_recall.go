@@ -38,4 +38,6 @@ func RunMain() int {
 		log.Println("Observed and predicted samples mismatch")
 		return -1
 	} else if classes, err := table.UintValues(table.Columns[0]); err != nil {
-		l
+		log.Println(err)
+		return -1
+	} else {
