@@ -41,3 +41,5 @@ func RunMain() int {
 		log.Println(err)
 		return -1
 	} else {
+		for _, class := range classes {
+			var t
