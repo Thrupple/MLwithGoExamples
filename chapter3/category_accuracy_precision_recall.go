@@ -42,4 +42,5 @@ func RunMain() int {
 		return -1
 	} else {
 		for _, class := range classes {
-			var t
+			var true_positive, false_positive uint
+			var 
