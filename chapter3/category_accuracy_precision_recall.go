@@ -43,4 +43,5 @@ func RunMain() int {
 	} else {
 		for _, class := range classes {
 			var true_positive, false_positive uint
-			var 
+			var true_negative, false_negative uint
+			for i := ran
