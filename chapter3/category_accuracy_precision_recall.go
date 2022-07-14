@@ -44,4 +44,5 @@ func RunMain() int {
 		for _, class := range classes {
 			var true_positive, false_positive uint
 			var true_negative, false_negative uint
-			for i := ran
+			for i := range observed {
+				if ob
