@@ -46,4 +46,5 @@ func RunMain() int {
 			var true_negative, false_negative uint
 			for i := range observed {
 				if observed[i] == class {
-					if predict
+					if predicted[i] == observed[i] {
+						true_positive
