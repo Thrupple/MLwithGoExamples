@@ -50,4 +50,6 @@ func RunMain() int {
 						true_positive++
 					} else {
 						false_negative++
-				
+					}
+				} else {
+					if predicted[i] ==
