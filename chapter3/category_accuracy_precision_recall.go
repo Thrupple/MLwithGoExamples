@@ -60,4 +60,4 @@ func RunMain() int {
 				}
 			}
 
-			precision := float64(tru
+			precision := float64(true_positive) / float64(true_positive+fals
