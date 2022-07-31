@@ -53,4 +53,7 @@ func RunMain() int {
 					}
 				} else {
 					if predicted[i] == observed[i] {
-						false_positive
+						false_positive++
+					} else {
+						true_negative++
+			
