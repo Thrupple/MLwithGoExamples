@@ -56,4 +56,8 @@ func RunMain() int {
 						false_positive++
 					} else {
 						true_negative++
-			
+					}
+				}
+			}
+
+			precision := float64(tru
