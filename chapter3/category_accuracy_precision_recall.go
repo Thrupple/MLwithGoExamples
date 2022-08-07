@@ -61,4 +61,4 @@ func RunMain() int {
 			}
 
 			precision := float64(true_positive) / float64(true_positive+false_positive)
-			recall := float64
+			recall := float64(true_positive) / float64(true_positive+fa
