@@ -64,4 +64,5 @@ func RunMain() int {
 			recall := float64(true_positive) / float64(true_positive+false_negative)
 
 			fmt.Println("Class", class, "=>")
-			fmt.Printf("  
+			fmt.Printf("  precision=%.2f\n", precision)
+			fmt.Prin
