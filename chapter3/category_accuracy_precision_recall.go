@@ -65,4 +65,5 @@ func RunMain() int {
 
 			fmt.Println("Class", class, "=>")
 			fmt.Printf("  precision=%.2f\n", precision)
-			fmt.Prin
+			fmt.Printf("  recall=%.2f\n", recall)
+			fmt.Println(
