@@ -16,4 +16,8 @@ import (
 
 func RunMain() int {
 	if flag.NArg() != 1 {
-		log.Println("Expecte
+		log.Println("Expected file argument")
+		return -1
+	}
+
+	
