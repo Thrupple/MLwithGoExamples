@@ -27,4 +27,5 @@ func RunMain() int {
 		return -1
 	}
 
-	// One in every four is 
+	// One in every four is the testing set
+	training_rows := make(
