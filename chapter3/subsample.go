@@ -30,3 +30,4 @@ func RunMain() int {
 	// One in every four is the testing set
 	training_rows := make([]int, 0)
 	testing_rows := make([]int, 0)
+	for row := 0; row < len(table.Rows)
