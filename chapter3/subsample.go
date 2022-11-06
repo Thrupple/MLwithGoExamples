@@ -33,3 +33,5 @@ func RunMain() int {
 	for row := 0; row < len(table.Rows); row++ {
 		if row%4 == 0 {
 			testing_rows = append(testing_rows, row)
+		} else {
+			training_rows = append
