@@ -32,4 +32,4 @@ func RunMain() int {
 	testing_rows := make([]int, 0)
 	for row := 0; row < len(table.Rows); row++ {
 		if row%4 == 0 {
-			te
+			testing_rows = append(testing_rows, row)
