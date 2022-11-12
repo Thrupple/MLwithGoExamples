@@ -34,4 +34,7 @@ func RunMain() int {
 		if row%4 == 0 {
 			testing_rows = append(testing_rows, row)
 		} else {
-			training_rows = append
+			training_rows = append(training_rows, row)
+		}
+	}
+	if training_
