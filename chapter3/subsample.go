@@ -37,4 +37,4 @@ func RunMain() int {
 			training_rows = append(training_rows, row)
 		}
 	}
-	if training_
+	if training_set, err := table.Subsample(train
