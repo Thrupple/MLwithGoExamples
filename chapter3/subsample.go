@@ -41,4 +41,7 @@ func RunMain() int {
 		log.Println("Unable to subsample training set:", err)
 		return -1
 	} else if testing_set, err := table.Subsample(testing_rows); err != nil {
-		log.Println("Unable to subsample testing set:", err
+		log.Println("Unable to subsample testing set:", err)
+		return -1
+	} else {
+		fmt.Println(
