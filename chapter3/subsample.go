@@ -44,4 +44,5 @@ func RunMain() int {
 		log.Println("Unable to subsample testing set:", err)
 		return -1
 	} else {
-		fmt.Println(
+		fmt.Println("Sample size =", len(table.Rows))
+		fm
