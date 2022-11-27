@@ -45,4 +45,4 @@ func RunMain() int {
 		return -1
 	} else {
 		fmt.Println("Sample size =", len(table.Rows))
-		fm
+		fmt.Println("Training set size =", len(train
