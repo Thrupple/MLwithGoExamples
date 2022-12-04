@@ -49,4 +49,7 @@ func RunMain() int {
 		fmt.Println("Testing set size =", len(testing_set.Rows))
 	}
 
-	return
+	return 0
+}
+
+///////////////////////////////
