@@ -46,4 +46,7 @@ func RunMain() int {
 	} else {
 		fmt.Println("Sample size =", len(table.Rows))
 		fmt.Println("Training set size =", len(training_set.Rows))
-		fmt.Println("Testing set size
+		fmt.Println("Testing set size =", len(testing_set.Rows))
+	}
+
+	return
