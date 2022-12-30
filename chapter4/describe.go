@@ -1,2 +1,2 @@
 // Usage:
-//  go run 
+//  go run chapter4/linear_regression.go chapter4/adv
