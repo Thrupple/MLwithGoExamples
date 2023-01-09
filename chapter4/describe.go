@@ -18,3 +18,7 @@ func RunMain() int {
 	if flag.NArg() != 1 {
 		log.Println("Expected file argument")
 		return -1
+	}
+
+	table, _ := util.NewTable()
+	filename := 
