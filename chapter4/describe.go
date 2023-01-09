@@ -24,4 +24,7 @@ func RunMain() int {
 	filename := flag.Arg(0)
 	if err := table.ReadCSV(filename, false, true, true); err != nil {
 		log.Println("Unable to read CSV:", err)
-		re
+		return -1
+	}
+
+	if description, err := 
