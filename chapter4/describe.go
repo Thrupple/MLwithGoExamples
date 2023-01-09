@@ -28,4 +28,5 @@ func RunMain() int {
 	}
 
 	if description, err := table.Describe(); err != nil {
-		log.
+		log.Println("Unable to read CSV:", err)
+		
