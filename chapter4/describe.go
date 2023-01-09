@@ -27,4 +27,5 @@ func RunMain() int {
 		return -1
 	}
 
-	if description, err := 
+	if description, err := table.Describe(); err != nil {
+		log.
