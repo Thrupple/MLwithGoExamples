@@ -23,4 +23,5 @@ func RunMain() int {
 	table, _ := util.NewTable()
 	filename := flag.Arg(0)
 	if err := table.ReadCSV(filename, false, true, true); err != nil {
-		log.Print
+		log.Println("Unable to read CSV:", err)
+		re
