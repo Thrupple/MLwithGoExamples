@@ -31,4 +31,10 @@ func RunMain() int {
 		log.Println("Unable to read CSV:", err)
 		return -1
 	} else {
-		fmt.Println(descriptio
+		fmt.Println(description)
+	}
+
+	return 0
+}
+
+//////////
