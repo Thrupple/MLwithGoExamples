@@ -42,3 +42,4 @@ func RunMain() int {
 func main() {
 	flag.Parse()
 	os.Exit(RunMain())
+}
