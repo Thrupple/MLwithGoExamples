@@ -111,3 +111,27 @@ func calculate_error(x, y []float64, b, m float64) float64 {
 func step(x, y []float64, b, m float64, rate float64) (float64, float64) {
 	b_gradient, m_gradient := float64(0), float64(0)
 	N := float64(len(x))
+	for i := range x {
+		b_gradient += -(2 / N) * (y[i] - (m*x[i] + b))
+		m_gradient += -(2 / N) * x[i] * (y[i] - (m*x[i] + b))
+	}
+	return b - (rate * b_gradient), m - (rate * m_gradient)
+}
+
+// Return values of b and m
+func gradient_descent(x, y []float64, rate float64, epochs uint) (float64, float64) {
+	var b, m float64
+	for i := uint(0); i < epochs; i++ {
+		b, m = step(x, y, b, m, rate)
+		fmt.Println("epoch=", i, "b=", b, "m=", m, "err=", calculate_error(x, y, b, m))
+
+	}
+	return b, m
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+func main() {
+	flag.Parse()
+	os.Exit(RunMain())
+}
