@@ -37,3 +37,42 @@ func RunMain() int {
 		log.Println("Unable to read CSV:", err)
 		return -1
 	}
+
+	x_column := "Sales"
+	y_column := "TV"
+	if flag.NArg() > 1 {
+		y_column = flag.Arg(1)
+	}
+
+	if x_data, err := table.FloatColumn(x_column, 0); err != nil {
+		log.Println("Unable to create X samples:", err)
+		return -1
+	} else if y_data, err := table.FloatColumn(y_column, 0); err != nil {
+		log.Println("Unable to create Y samples:", err)
+		return -1
+	} else if plot, err := plot.New(); err != nil {
+		log.Println("Unable to create plot:", err)
+		return -1
+	} else {
+		plot.X.Label.Text = x_column
+		plot.Y.Label.Text = y_column
+
+		if scatter, err := plotter.NewScatter(plot_points(x_data, y_data)); err != nil {
+			log.Println("Unable to create plot:", err)
+			return -1
+		} else if line, err := plotter.NewLine(line_points(x_data, y_data)); err != nil {
+			log.Println("Unable to create plot:", err)
+			return -1
+		} else {
+			line.Color = color.RGBA{B: 255, A: 255}
+			plot.Add(scatter, line)
+			if err := plot.Save(4*vg.Inch, 4*vg.Inch, path.Base(filename)+"_"+x_column+"_"+y_column+".png"); err != nil {
+				log.Println("Unable to create plot:", err)
+				return -1
+			}
+		}
+	}
+	//
+
+	return 0
+}
