@@ -76,3 +76,38 @@ func RunMain() int {
 
 	return 0
 }
+
+// Return plot points
+func plot_points(x, y []float64) plotter.XYs {
+	pts := make(plotter.XYs, len(x))
+	for i := range pts {
+		pts[i].X = x[i]
+		pts[i].Y = y[i]
+	}
+	return pts
+}
+
+// Return line points
+func line_points(x, y []float64) plotter.XYs {
+	b, m := gradient_descent(x, y, LEARNING_RATE, 1000)
+	pts := make(plotter.XYs, len(x))
+	for i := range pts {
+		pts[i].X = x[i]
+		pts[i].Y = m*x[i] + b
+	}
+	return pts
+}
+
+// Calculate squared error for samples and estimated b & m
+func calculate_error(x, y []float64, b, m float64) float64 {
+	var total_error float64
+	for i := range x {
+		total_error += math.Pow(y[i]-(m*x[i]+b), 2)
+	}
+	return total_error / float64(len(x))
+}
+
+// Step function for computing new values of b and m
+func step(x, y []float64, b, m float64, rate float64) (float64, float64) {
+	b_gradient, m_gradient := float64(0), float64(0)
+	N := float64(len(x))
