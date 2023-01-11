@@ -1,3 +1,5 @@
 package nn
 
-type 
+type Config struct {
+	InputNeurons  uint
+	OutputNeuro
