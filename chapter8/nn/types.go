@@ -4,4 +4,8 @@ type Config struct {
 	InputNeurons  uint
 	OutputNeurons uint
 	HiddenNeurons uint
-	NumEpochs   
+	NumEpochs     uint
+	LearningRate  float64
+}
+
+type net struct
