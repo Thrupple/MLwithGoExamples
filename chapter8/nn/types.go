@@ -2,4 +2,6 @@ package nn
 
 type Config struct {
 	InputNeurons  uint
-	OutputNeuro
+	OutputNeurons uint
+	HiddenNeurons uint
+	NumEpochs   
