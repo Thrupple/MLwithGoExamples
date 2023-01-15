@@ -8,4 +8,7 @@ type Config struct {
 	LearningRate  float64
 }
 
-type net struct
+type net struct {
+}
+
+func NewThreeLayer(config Config) 
