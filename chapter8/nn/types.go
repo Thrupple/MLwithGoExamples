@@ -11,4 +11,7 @@ type Config struct {
 type net struct {
 }
 
-func NewThreeLayer(config Config) 
+func NewThreeLayer(config Config) *net {
+	this := new(net)
+
+}
