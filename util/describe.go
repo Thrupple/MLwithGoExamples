@@ -38,3 +38,27 @@ func (this *Table) describe_samples() ([]string, []string, []string) {
 	mean_str := make([]string, len(this.Columns)+1)
 	samples_str[0] = "samples"
 	sum_str[0] = "sum"
+	mean_str[0] = "mean"
+	for column := range this.Columns {
+		var sum float64
+		var cells, samples uint
+		for row := range this.Rows {
+			if value := this.Rows[row][column]; value != nil {
+				cells++
+				if v, err := value.Float64(); err == nil {
+					sum += v
+					samples++
+				}
+			}
+		}
+		if cells > 0 {
+			samples_str[column+1] = fmt.Sprint(cells)
+		}
+		if samples > 0 {
+			sum_str[column+1] = fmt.Sprintf("%.2f", sum)
+			mean_str[column+1] = fmt.Sprintf("%.2f", sum/float64(samples))
+		}
+
+	}
+	return samples_str, sum_str, mean_str
+}
