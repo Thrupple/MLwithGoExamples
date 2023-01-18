@@ -16,3 +16,5 @@ require (
 	golang.org/x/tools v0.0.0-20181207222222-4c874b978acb // indirect
 	gonum.org/v1/gonum v0.0.0-20181208210948-435185761cc9
 	gonum.org/v1/netlib v0.0.0-20181029234149-ec6d1f5cefe6 // indirect
+	gonum.org/v1/plot v0.0.0-20181208091836-db5ea5fa8928
+)
