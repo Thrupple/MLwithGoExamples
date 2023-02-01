@@ -9,4 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/olekukonko/tablewriter
+	"github.com/olekukonko/tablewriter"
+)
+
+// Error is an error message with pot
