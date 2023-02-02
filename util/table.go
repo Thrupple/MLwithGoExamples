@@ -12,4 +12,5 @@ import (
 	"github.com/olekukonko/tablewriter"
 )
 
-// Error is an error message with pot
+// Error is an error message with potentially a line number
+type Error struc
