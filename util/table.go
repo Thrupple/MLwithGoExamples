@@ -13,4 +13,9 @@ import (
 )
 
 // Error is an error message with potentially a line number
-type Error struc
+type Error struct {
+	reason string
+	line   int
+}
+
+//
