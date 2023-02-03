@@ -18,4 +18,5 @@ type Error struct {
 	line   int
 }
 
-//
+// Value is a single value in the data
+type Value
