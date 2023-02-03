@@ -19,4 +19,6 @@ type Error struct {
 }
 
 // Value is a single value in the data
-type Value
+type Value struct {
+	Str      string
+	_Uint64  *ui
