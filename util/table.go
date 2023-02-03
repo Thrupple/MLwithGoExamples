@@ -21,4 +21,9 @@ type Error struct {
 // Value is a single value in the data
 type Value struct {
 	Str      string
-	_Uint64  *ui
+	_Uint64  *uint64
+	_Int64   *int64
+	_Float64 *float64
+}
+
+// 
