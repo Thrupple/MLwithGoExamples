@@ -26,4 +26,4 @@ type Value struct {
 	_Float64 *float64
 }
 
-// 
+// Table is the table of values with
