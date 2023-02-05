@@ -28,4 +28,6 @@ type Value struct {
 
 // Table is the table of values with optional column headers
 type Table struct {
-	C
+	Columns []string
+	colmap  map[string]int
+	Rows   
