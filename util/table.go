@@ -35,4 +35,4 @@ type Table struct {
 
 var (
 	ErrDuplicateColumn = &Error{reason: "Duplicate or invalid column name"}
-	ErrDimens
+	ErrDimensionError  = &Error{reason: "Too many
