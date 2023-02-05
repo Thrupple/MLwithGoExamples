@@ -26,4 +26,6 @@ type Value struct {
 	_Float64 *float64
 }
 
-// Table is the table of values with
+// Table is the table of values with optional column headers
+type Table struct {
+	C
