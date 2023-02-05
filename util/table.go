@@ -30,4 +30,8 @@ type Value struct {
 type Table struct {
 	Columns []string
 	colmap  map[string]int
-	Rows   
+	Rows    [][]*Value
+}
+
+var (
+	ErrDuplicateColum
