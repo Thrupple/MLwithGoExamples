@@ -34,4 +34,4 @@ type Table struct {
 }
 
 var (
-	ErrDuplicateColum
+	ErrDuplicateColumn = &Error{reason: "Duplicate or
