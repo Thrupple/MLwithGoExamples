@@ -40,4 +40,5 @@ var (
 	ErrNotFound        = &Error{reason: "Column Not Found"}
 )
 
-// NewTable create
+// NewTable creates a new table with specified columns
+func New
