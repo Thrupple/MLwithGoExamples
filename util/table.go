@@ -41,4 +41,4 @@ var (
 )
 
 // NewTable creates a new table with specified columns
-func New
+func NewTable(columns ...string) (*Table, err
