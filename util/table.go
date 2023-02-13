@@ -41,4 +41,6 @@ var (
 )
 
 // NewTable creates a new table with specified columns
-func NewTable(columns ...string) (*Table, err
+func NewTable(columns ...string) (*Table, error) {
+	this := new(Table)
+	if err :=
