@@ -43,4 +43,7 @@ var (
 // NewTable creates a new table with specified columns
 func NewTable(columns ...string) (*Table, error) {
 	this := new(Table)
-	if err := this.SetColumns(columns...); err !=
+	if err := this.SetColumns(columns...); err != nil {
+		return nil, err
+	}
+	return this, 
