@@ -50,4 +50,5 @@ func NewTable(columns ...string) (*Table, error) {
 }
 
 // Subsample creates a new table from an existing table with
-// the s
+// the specified rows
+func (this *Table) Subsa
