@@ -46,4 +46,7 @@ func NewTable(columns ...string) (*Table, error) {
 	if err := this.SetColumns(columns...); err != nil {
 		return nil, err
 	}
-	return this, 
+	return this, nil
+}
+
+// Subsample creates a new tabl
