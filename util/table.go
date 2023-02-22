@@ -49,4 +49,5 @@ func NewTable(columns ...string) (*Table, error) {
 	return this, nil
 }
 
-// Subsample creates a new tabl
+// Subsample creates a new table from an existing table with
+// the s
