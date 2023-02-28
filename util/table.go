@@ -54,4 +54,6 @@ func NewTable(columns ...string) (*Table, error) {
 func (this *Table) Subsample(rows []int) (*Table, error) {
 	that := new(Table)
 	if err := that.SetColumns(this.Columns...); err != nil {
-		re
+		return nil, err
+	} else {
+		that.Rows = make([][]*Valu
