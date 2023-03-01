@@ -64,4 +64,7 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 			that.Rows = append(that.Rows, this.Rows[row])
 		}
 	}
-	re
+	return that, nil
+}
+
+// SetColumns sets the columns f
