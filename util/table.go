@@ -57,4 +57,5 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 		return nil, err
 	} else {
 		that.Rows = make([][]*Value, 0, len(rows))
-		for _, row := r
+		for _, row := range rows {
+			if row < 0 || row >= le
