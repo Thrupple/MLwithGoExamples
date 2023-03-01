@@ -61,4 +61,7 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 			if row < 0 || row >= len(this.Rows) {
 				return nil, ErrOutOfRange
 			}
-			that.Rows = append(that.Rows,
+			that.Rows = append(that.Rows, this.Rows[row])
+		}
+	}
+	re
