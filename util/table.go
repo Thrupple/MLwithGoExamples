@@ -56,4 +56,5 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 	if err := that.SetColumns(this.Columns...); err != nil {
 		return nil, err
 	} else {
-		that.Rows = make([][]*Valu
+		that.Rows = make([][]*Value, 0, len(rows))
+		for _, row := r
