@@ -67,4 +67,5 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 	return that, nil
 }
 
-// SetColumns sets the columns f
+// SetColumns sets the columns for the table
+func (this *Table) SetColumns(colu
