@@ -59,4 +59,6 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 		that.Rows = make([][]*Value, 0, len(rows))
 		for _, row := range rows {
 			if row < 0 || row >= len(this.Rows) {
-				return nil, ErrOu
+				return nil, ErrOutOfRange
+			}
+			that.Rows = append(that.Rows,
