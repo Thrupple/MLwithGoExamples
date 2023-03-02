@@ -68,4 +68,5 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 }
 
 // SetColumns sets the columns for the table
-func (this *Table) SetColumns(colu
+func (this *Table) SetColumns(columns ...string) error {
+	this.Columns = make
