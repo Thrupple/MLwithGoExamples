@@ -70,4 +70,4 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 // SetColumns sets the columns for the table
 func (this *Table) SetColumns(columns ...string) error {
 	this.Columns = make([]string, 0, len(columns))
-	this.
+	this.colmap = make(map[string]int, len(columns)
