@@ -71,4 +71,10 @@ func (this *Table) Subsample(rows []int) (*Table, error) {
 func (this *Table) SetColumns(columns ...string) error {
 	this.Columns = make([]string, 0, len(columns))
 	this.colmap = make(map[string]int, len(columns))
-	if err := this.AppendColumns(columns...); err !
+	if err := this.AppendColumns(columns...); err != nil {
+		return err
+	}
+	return nil
+}
+
+// Nu
