@@ -79,4 +79,5 @@ func (this *Table) SetColumns(columns ...string) error {
 
 // NumberOfColumns returns the number of columns for the
 // table
-func (this *Table) N
+func (this *Table) NumberOfColumns() int {
+	return l
