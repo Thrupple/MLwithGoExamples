@@ -80,4 +80,7 @@ func (this *Table) SetColumns(columns ...string) error {
 // NumberOfColumns returns the number of columns for the
 // table
 func (this *Table) NumberOfColumns() int {
-	return l
+	return len(this.Columns)
+}
+
+// AppendColumns
