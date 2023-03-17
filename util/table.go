@@ -83,4 +83,5 @@ func (this *Table) NumberOfColumns() int {
 	return len(this.Columns)
 }
 
-// AppendColumns
+// AppendColumns appends columns onto the table
+func (
