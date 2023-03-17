@@ -84,4 +84,4 @@ func (this *Table) NumberOfColumns() int {
 }
 
 // AppendColumns appends columns onto the table
-func (
+func (this *Table) AppendColumns(columns ..
