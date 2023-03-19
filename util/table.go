@@ -85,4 +85,5 @@ func (this *Table) NumberOfColumns() int {
 
 // AppendColumns appends columns onto the table
 func (this *Table) AppendColumns(columns ...string) error {
-	// Update colu
+	// Update columns and colmap
+	for i, column := range colu
