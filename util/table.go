@@ -88,4 +88,7 @@ func (this *Table) AppendColumns(columns ...string) error {
 	// Update columns and colmap
 	for i, column := range columns {
 		if _, exists := this.colmap[column]; exists {
-			return ErrDuplica
+			return ErrDuplicateColumn
+		}
+		this.colmap[column] = i
+		this.Colum
