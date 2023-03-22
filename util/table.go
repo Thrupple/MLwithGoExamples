@@ -96,4 +96,4 @@ func (this *Table) AppendColumns(columns ...string) error {
 	return nil
 }
 
-// TypeForColumn returns 
+// TypeForColumn returns uint, int or float a
