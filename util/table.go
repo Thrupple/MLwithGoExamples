@@ -98,4 +98,5 @@ func (this *Table) AppendColumns(columns ...string) error {
 
 // TypeForColumn returns uint, int or float as a string depending
 // on whether a column is all uint, int or float. It can also
-// return empty string if indeterminate (empt
+// return empty string if indeterminate (empty data, for example)
+func (this *Ta
