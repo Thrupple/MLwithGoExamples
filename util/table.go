@@ -91,4 +91,6 @@ func (this *Table) AppendColumns(columns ...string) error {
 			return ErrDuplicateColumn
 		}
 		this.colmap[column] = i
-		this.Colum
+		this.Columns = append(this.Columns, column)
+	}
+	
