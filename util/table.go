@@ -93,4 +93,7 @@ func (this *Table) AppendColumns(columns ...string) error {
 		this.colmap[column] = i
 		this.Columns = append(this.Columns, column)
 	}
-	
+	return nil
+}
+
+// TypeForColumn returns 
