@@ -100,4 +100,5 @@ func (this *Table) AppendColumns(columns ...string) error {
 // on whether a column is all uint, int or float. It can also
 // return empty string if indeterminate (empty data, for example)
 func (this *Table) TypeForColumn(c string) (string, error) {
-	if n, exists := this.colmap[c]; exi
+	if n, exists := this.colmap[c]; exists == false {
+		return "", ErrNotF
