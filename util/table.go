@@ -101,4 +101,6 @@ func (this *Table) AppendColumns(columns ...string) error {
 // return empty string if indeterminate (empty data, for example)
 func (this *Table) TypeForColumn(c string) (string, error) {
 	if n, exists := this.colmap[c]; exists == false {
-		return "", ErrNotF
+		return "", ErrNotFound
+	} else {
+		var not
