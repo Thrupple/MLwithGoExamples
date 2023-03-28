@@ -103,4 +103,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 	if n, exists := this.colmap[c]; exists == false {
 		return "", ErrNotFound
 	} else {
-		var not_float, not_uint, not_int, 
+		var not_float, not_uint, not_int, any bool
+		for _, values := range this.Rows {
