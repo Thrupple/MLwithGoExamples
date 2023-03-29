@@ -105,3 +105,4 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 	} else {
 		var not_float, not_uint, not_int, any bool
 		for _, values := range this.Rows {
+			if n >= len(values) || values
