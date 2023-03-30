@@ -108,4 +108,6 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			if n >= len(values) || values[n] == nil {
 				continue
 			}
-			// W
+			// We have seen a value
+			any = true
+			/
