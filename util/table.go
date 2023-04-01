@@ -110,4 +110,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			}
 			// We have seen a value
 			any = true
-			/
+			// Check for int first
+			if not_int == false 
