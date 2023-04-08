@@ -113,4 +113,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			// Check for int first
 			if not_int == false {
 				// check for int
-				if _, err := values[n
+				if _, err := values[n].Int64(); err != nil {
+					not_int = tru
