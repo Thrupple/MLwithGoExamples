@@ -117,4 +117,6 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 					not_int = true
 				}
 			}
-			// Then check fo
+			// Then check for uint
+			if not_uint == false {
+				// check for 
