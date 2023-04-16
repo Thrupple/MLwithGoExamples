@@ -119,4 +119,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			}
 			// Then check for uint
 			if not_uint == false {
-				// check for 
+				// check for uint
+				if _, err := values[n].Ui
