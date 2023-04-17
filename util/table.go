@@ -121,4 +121,7 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			if not_uint == false {
 				// check for uint
 				if _, err := values[n].Uint64(); err != nil {
-					not_uint =
+					not_uint = true
+				}
+			}
+			// Finally check for
