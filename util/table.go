@@ -124,4 +124,6 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 					not_uint = true
 				}
 			}
-			// Finally check for
+			// Finally check for float
+			if not_float == false {
+				// che
