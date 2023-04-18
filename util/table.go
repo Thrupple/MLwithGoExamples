@@ -126,4 +126,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			}
 			// Finally check for float
 			if not_float == false {
-				// che
+				// check for float
+				if _, err := val
