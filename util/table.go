@@ -127,4 +127,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			// Finally check for float
 			if not_float == false {
 				// check for float
-				if _, err := val
+				if _, err := values[n].Float64(); err != nil {
+					not_
