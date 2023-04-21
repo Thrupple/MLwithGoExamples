@@ -134,4 +134,4 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 		}
 		if any == false {
 			return "", ErrOutOfRange
-		
+		} else if not_int == true && not_uint =
