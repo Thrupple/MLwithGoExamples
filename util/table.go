@@ -132,4 +132,6 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 				}
 			}
 		}
-		if 
+		if any == false {
+			return "", ErrOutOfRange
+		
