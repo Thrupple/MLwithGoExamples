@@ -136,4 +136,6 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			return "", ErrOutOfRange
 		} else if not_int == true && not_uint == true && not_float == true {
 			return "", nil
-		} else if not_int == true && not_
+		} else if not_int == true && not_uint == true {
+			return "float", nil
+		}
