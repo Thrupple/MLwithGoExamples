@@ -139,4 +139,6 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 		} else if not_int == true && not_uint == true {
 			return "float", nil
 		} else if not_uint == true {
-			return "int", ni
+			return "int", nil
+		} else {
+			return "uint", nil
