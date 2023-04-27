@@ -142,3 +142,8 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 			return "int", nil
 		} else {
 			return "uint", nil
+		}
+	}
+}
+
+// AppendStringRow append
