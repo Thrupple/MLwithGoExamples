@@ -146,4 +146,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 	}
 }
 
-// AppendStringRow append
+// AppendStringRow appends a row of string values onto the table
+//
