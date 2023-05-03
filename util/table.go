@@ -147,4 +147,4 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 }
 
 // AppendStringRow appends a row of string values onto the table
-//
+// and will return an error if the length of t
