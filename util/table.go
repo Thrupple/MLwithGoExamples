@@ -147,4 +147,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 }
 
 // AppendStringRow appends a row of string values onto the table
-// and will return an error if the length of t
+// and will return an error if the length of the string exceeds
+// the number of columns. If you 
