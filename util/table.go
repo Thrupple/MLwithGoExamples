@@ -151,4 +151,4 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 // the number of columns. If you set treat_empty_as_nil to true
 // then any string value which is only whitespace or of zero length
 // is treated as nil
-func (this *Table)
+func (this *Table) AppendStringRow(values []string, treat_
