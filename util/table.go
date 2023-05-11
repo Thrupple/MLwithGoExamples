@@ -153,4 +153,7 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 // is treated as nil
 func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) error {
 	if len(values) > len(this.Columns) {
-		return ErrDimension
+		return ErrDimensionError
+	}
+	// Create a row of values
+	row := ma
