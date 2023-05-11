@@ -152,4 +152,5 @@ func (this *Table) TypeForColumn(c string) (string, error) {
 // then any string value which is only whitespace or of zero length
 // is treated as nil
 func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) error {
-	if len(values
+	if len(values) > len(this.Columns) {
+		return ErrDimension
