@@ -158,4 +158,6 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 	// Create a row of values
 	row := make([]*Value, len(this.Columns))
 	for i := 0; i < len(values); i++ {
-		if i >
+		if i >= len(values) {
+			continue
+		} else
