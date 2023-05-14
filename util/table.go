@@ -160,4 +160,7 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 	for i := 0; i < len(values); i++ {
 		if i >= len(values) {
 			continue
-		} else if treat_empty_as_nil && (values[i] == "" || strings.TrimSpace(values[i]) 
+		} else if treat_empty_as_nil && (values[i] == "" || strings.TrimSpace(values[i]) == "") {
+			continue
+		} else {
+			
