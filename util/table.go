@@ -163,4 +163,5 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 		} else if treat_empty_as_nil && (values[i] == "" || strings.TrimSpace(values[i]) == "") {
 			continue
 		} else {
-			
+			row[i] = &Value{Str: values[i]}
+		}
