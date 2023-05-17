@@ -165,3 +165,7 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 		} else {
 			row[i] = &Value{Str: values[i]}
 		}
+	}
+
+	// Append row
+	if this.Row
