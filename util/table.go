@@ -169,4 +169,6 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 
 	// Append row
 	if this.Rows == nil {
-		this.Rows = make([][]*Value, 
+		this.Rows = make([][]*Value, 0, 1)
+	}
+	this.Rows = append(this.Rows
