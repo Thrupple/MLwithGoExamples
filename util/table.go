@@ -176,3 +176,5 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 	// Return success
 	return nil
 }
+
+// StringRow returns a row as an array of str
