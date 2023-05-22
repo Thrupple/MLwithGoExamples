@@ -178,4 +178,4 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 }
 
 // StringRow returns a row as an array of string values for row index n. If
-// any val
+// any values are nil then the nil_string 
