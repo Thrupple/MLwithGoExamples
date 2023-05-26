@@ -179,4 +179,4 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 
 // StringRow returns a row as an array of string values for row index n. If
 // any values are nil then the nil_string is used
-func (this *Table) S
+func (this *Table) StringRow(n int, nil_string string) ([]
