@@ -181,4 +181,7 @@ func (this *Table) AppendStringRow(values []string, treat_empty_as_nil bool) err
 // any values are nil then the nil_string is used
 func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 	if n < 0 || n >= len(this.Rows) {
-		return nil, ErrOutOf
+		return nil, ErrOutOfRange
+	}
+	values := this.Rows[n]
+	row :=
