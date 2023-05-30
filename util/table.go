@@ -184,4 +184,5 @@ func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 		return nil, ErrOutOfRange
 	}
 	values := this.Rows[n]
-	row :=
+	row := make([]string, len(this.Columns))
+	for 
