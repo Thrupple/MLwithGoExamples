@@ -187,4 +187,6 @@ func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 	row := make([]string, len(this.Columns))
 	for i := range row {
 		if i >= len(values) || values[i] == nil {
-			row[i] = nil_strin
+			row[i] = nil_string
+		} else {
+			row[i] = valu
