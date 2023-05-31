@@ -198,4 +198,4 @@ func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 // StringColumn returns all values in a specific named column, c. If
 // any values are nil then the nil_string is used
 func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
-	if 
+	if n, exists := this.colmap[c]; exists == f
