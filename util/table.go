@@ -189,4 +189,9 @@ func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 		if i >= len(values) || values[i] == nil {
 			row[i] = nil_string
 		} else {
-			row[i] = valu
+			row[i] = values[i].Str
+		}
+	}
+	return row, nil
+}
+
