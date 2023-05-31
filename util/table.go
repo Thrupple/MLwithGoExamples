@@ -195,4 +195,5 @@ func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 	return row, nil
 }
 
-// StringColumn returns all values in a
+// StringColumn returns all values in a specific named column, c. If
+// any va
