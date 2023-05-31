@@ -195,3 +195,4 @@ func (this *Table) StringRow(n int, nil_string string) ([]string, error) {
 	return row, nil
 }
 
+// StringColumn returns all values in a
