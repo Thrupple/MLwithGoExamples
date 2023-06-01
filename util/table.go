@@ -201,4 +201,5 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 	if n, exists := this.colmap[c]; exists == false {
 		return nil, ErrNotFound
 	} else {
-		column := make([]
+		column := make([]string, len(this.Rows))
+		for i, values := ra
