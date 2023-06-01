@@ -203,4 +203,5 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 	} else {
 		column := make([]string, len(this.Rows))
 		for i, values := range this.Rows {
-			if n >= len(values) ||
+			if n >= len(values) || values[n] == nil {
+				column[i] = nil
