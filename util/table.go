@@ -202,4 +202,5 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 		return nil, ErrNotFound
 	} else {
 		column := make([]string, len(this.Rows))
-		for i, values := ra
+		for i, values := range this.Rows {
+			if n >= len(values) ||
