@@ -206,4 +206,7 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 			if n >= len(values) || values[n] == nil {
 				column[i] = nil_string
 			} else {
-				column[i] = 
+				column[i] = values[n].Str
+			}
+		}
+		return column, ni
