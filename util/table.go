@@ -213,4 +213,4 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 	}
 }
 
-// FloatColumn returns all value
+// FloatColumn returns all values in a specific named column, c as float64 values. 
