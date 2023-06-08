@@ -216,4 +216,4 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 // FloatColumn returns all values in a specific named column, c as float64 values. If
 // any values are nil then the nil_value is used (usually 0.0). If any value cannot be
 // converted to a float, then an error is returned
-func (this *Table) FloatColum
+func (this *Table) FloatColumn(c string, nil_value float64) ([]floa
