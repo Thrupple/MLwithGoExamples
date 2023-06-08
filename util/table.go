@@ -209,4 +209,8 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 				column[i] = values[n].Str
 			}
 		}
-		return column, ni
+		return column, nil
+	}
+}
+
+// FloatColumn returns all value
