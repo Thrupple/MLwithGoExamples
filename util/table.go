@@ -218,4 +218,6 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 // converted to a float, then an error is returned
 func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 	if n, exists := this.colmap[c]; exists == false {
-		return
+		return nil, ErrNotFound
+	} else {
+		column := mak
