@@ -217,4 +217,5 @@ func (this *Table) StringColumn(c string, nil_string string) ([]string, error) {
 // any values are nil then the nil_value is used (usually 0.0). If any value cannot be
 // converted to a float, then an error is returned
 func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
-	if n, exists := thi
+	if n, exists := this.colmap[c]; exists == false {
+		return
