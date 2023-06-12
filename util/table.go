@@ -220,4 +220,5 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 	if n, exists := this.colmap[c]; exists == false {
 		return nil, ErrNotFound
 	} else {
-		column := mak
+		column := make([]float64, len(this.Rows))
+		f
