@@ -221,4 +221,5 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 		return nil, ErrNotFound
 	} else {
 		column := make([]float64, len(this.Rows))
-		f
+		for i, values := range this.Rows {
+			if 
