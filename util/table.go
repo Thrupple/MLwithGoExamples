@@ -227,3 +227,5 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 			} else {
 				if float, err := values[n].Float64(); err != nil {
 					return nil, err
+				} else {
+					column[i] = float
