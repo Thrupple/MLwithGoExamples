@@ -229,3 +229,11 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 					return nil, err
 				} else {
 					column[i] = float
+				}
+			}
+		}
+		return column, nil
+	}
+}
+
+/
