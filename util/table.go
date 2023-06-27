@@ -236,4 +236,4 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 	}
 }
 
-/
+// UintColumn returns all values in a
