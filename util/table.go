@@ -237,4 +237,5 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 }
 
 // UintColumn returns all values in a specific named column, c as uint values. If
-// any values are nil then the nil_value is used (usually 0). If any value
+// any values are nil then the nil_value is used (usually 0). If any value cannot be
+// converted to a uint, t
