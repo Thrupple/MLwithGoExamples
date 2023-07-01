@@ -248,4 +248,4 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 			if n >= len(values) || values[n] == nil {
 				column[i] = nil_value
 			} else {
-				
+				if value, err := values[n].Uint64(); err !
