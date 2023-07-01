@@ -241,4 +241,6 @@ func (this *Table) FloatColumn(c string, nil_value float64) ([]float64, error) {
 // converted to a uint, then an error is returned
 func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 	if n, exists := this.colmap[c]; exists == false {
-		return
+		return nil, ErrNotFound
+	} else {
+		column 
