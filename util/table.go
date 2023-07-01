@@ -246,4 +246,6 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 		column := make([]uint, len(this.Rows))
 		for i, values := range this.Rows {
 			if n >= len(values) || values[n] == nil {
-			
+				column[i] = nil_value
+			} else {
+				
