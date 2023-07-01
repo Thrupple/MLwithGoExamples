@@ -243,4 +243,5 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 	if n, exists := this.colmap[c]; exists == false {
 		return nil, ErrNotFound
 	} else {
-		column 
+		column := make([]uint, len(this.Rows))
+		fo
