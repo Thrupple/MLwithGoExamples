@@ -259,4 +259,4 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 	}
 }
 
-// UintPoin
+// UintPointerColumn returns all values in a specific name
