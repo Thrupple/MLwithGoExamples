@@ -252,4 +252,11 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 					return nil, err
 				} else {
 					column[i] = uint(value)
-	
+				}
+			}
+		}
+		return column, nil
+	}
+}
+
+// UintPoin
