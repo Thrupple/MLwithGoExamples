@@ -250,4 +250,6 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 			} else {
 				if value, err := values[n].Uint64(); err != nil {
 					return nil, err
-				} else
+				} else {
+					column[i] = uint(value)
+	
