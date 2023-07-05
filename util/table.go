@@ -260,4 +260,4 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 }
 
 // UintPointerColumn returns all values in a specific named column, c as
-// *uint value
+// *uint values. If any values are nil then the
