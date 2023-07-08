@@ -266,4 +266,6 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 	if n, exists := this.colmap[c]; exists == false {
 		return nil, ErrNotFound
 	} else {
-		column := make([]*uint, len(this.Row
+		column := make([]*uint, len(this.Rows))
+		for i, values := range this.Rows {
+			if n >
