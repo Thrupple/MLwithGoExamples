@@ -263,4 +263,6 @@ func (this *Table) UintColumn(c string, nil_value uint) ([]uint, error) {
 // *uint values. If any values are nil then the pointer is nil. If any value cannot be
 // converted to a uint, then an error is returned
 func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
-	if n, exists := this.colmap[c];
+	if n, exists := this.colmap[c]; exists == false {
+		return nil, ErrNotFound
+	
