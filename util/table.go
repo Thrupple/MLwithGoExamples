@@ -269,4 +269,6 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 		column := make([]*uint, len(this.Rows))
 		for i, values := range this.Rows {
 			if n >= len(values) || values[n] == nil {
-				co
+				column[i] = nil
+			} else {
+				if v
