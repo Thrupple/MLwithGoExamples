@@ -273,3 +273,5 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 			} else {
 				if value, err := values[n].Uint64(); err != nil {
 					return nil, err
+				} else {
+					v := uint(value
