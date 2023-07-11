@@ -271,4 +271,5 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 			if n >= len(values) || values[n] == nil {
 				column[i] = nil
 			} else {
-				if value, err := values[n].Uint64()
+				if value, err := values[n].Uint64(); err != nil {
+					return nil, err
