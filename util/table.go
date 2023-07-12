@@ -279,4 +279,8 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 				}
 			}
 		}
-		
+		return column, nil
+	}
+}
+
+// UintValues ret
