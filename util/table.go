@@ -283,4 +283,6 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 	}
 }
 
-// UintValues returns unique values in a specific name
+// UintValues returns unique values in a specific names column, c
+// or will return error on failure
+fun
