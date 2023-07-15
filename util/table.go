@@ -285,4 +285,5 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 
 // UintValues returns unique values in a specific names column, c
 // or will return error on failure
-func (this *Table) UintValues(c string) ([]ui
+func (this *Table) UintValues(c string) ([]uint, error) {
+	if values, err := this.UintPoint
