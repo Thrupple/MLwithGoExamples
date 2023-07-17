@@ -290,4 +290,6 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 		return nil, err
 	} else {
 		classmap := make(map[uint]bool)
-		classes := make([]uint, 0
+		classes := make([]uint, 0)
+		for _, key := range values {
+			i
