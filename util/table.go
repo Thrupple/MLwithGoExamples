@@ -289,4 +289,5 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 	if values, err := this.UintPointerColumn(c); err != nil {
 		return nil, err
 	} else {
-		classmap := make(map[uint]
+		classmap := make(map[uint]bool)
+		classes := make([]uint, 0
