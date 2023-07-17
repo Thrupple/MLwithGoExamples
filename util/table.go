@@ -288,4 +288,5 @@ func (this *Table) UintPointerColumn(c string) ([]*uint, error) {
 func (this *Table) UintValues(c string) ([]uint, error) {
 	if values, err := this.UintPointerColumn(c); err != nil {
 		return nil, err
-	
+	} else {
+		classmap := make(map[uint]
