@@ -292,4 +292,4 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 		classmap := make(map[uint]bool)
 		classes := make([]uint, 0)
 		for _, key := range values {
-			i
+			if _, exists := classmap[*key]; exists == fals
