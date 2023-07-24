@@ -294,4 +294,7 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 		for _, key := range values {
 			if _, exists := classmap[*key]; exists == false {
 				classmap[*key] = true
-				classes = a
+				classes = append(classes, *key)
+			}
+		}
+		return c
