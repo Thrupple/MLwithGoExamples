@@ -297,4 +297,8 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 				classes = append(classes, *key)
 			}
 		}
-		return c
+		return classes, nil
+	}
+}
+
+// ReadCSV reads data from
