@@ -304,3 +304,4 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 // ReadCSV reads data from a CSV file. Sometimes there are comments
 // and a header line within the file
 func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_empty_as_nil bool) error {
+	if f, err := os.Open(filename); e
