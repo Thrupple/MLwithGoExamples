@@ -301,4 +301,4 @@ func (this *Table) UintValues(c string) ([]uint, error) {
 	}
 }
 
-// ReadCSV reads data from
+// ReadCSV reads data from a CSV file. Sometimes there are comments
