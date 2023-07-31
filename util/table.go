@@ -307,4 +307,5 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 	if f, err := os.Open(filename); err != nil {
 		return err
 	} else {
-		defer f.
+		defer f.Close()
+		if rows, err := csv.NewReader(f).R
