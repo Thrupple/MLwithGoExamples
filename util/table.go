@@ -313,4 +313,6 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 		} else {
 			is_header := !skip_header
 			for _, row := range rows {
-				if len(row) == 0 && sk
+				if len(row) == 0 && skip_comments {
+					continue
+				
