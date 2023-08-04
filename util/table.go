@@ -311,3 +311,5 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 		if rows, err := csv.NewReader(f).ReadAll(); err != nil {
 			return err
 		} else {
+			is_header := !skip_header
+			for _, row := r
