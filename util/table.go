@@ -315,4 +315,4 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 			for _, row := range rows {
 				if len(row) == 0 && skip_comments {
 					continue
-				
+				} else if skip_comments && st
