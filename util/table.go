@@ -316,4 +316,5 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 				if len(row) == 0 && skip_comments {
 					continue
 				} else if skip_comments && strings.TrimSpace(row[0]) == "" {
-		
+					continue
+				} else if skip_comments &
