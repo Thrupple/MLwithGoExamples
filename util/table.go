@@ -321,4 +321,5 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 					continue
 				} else if is_header {
 					// Set the columns from the header, over-writing the
-					// 
+					// existing columns
+					if err := this.SetColum
