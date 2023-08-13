@@ -319,4 +319,5 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 					continue
 				} else if skip_comments && (strings.HasPrefix(row[0], "#") || strings.HasPrefix(row[0], "//")) {
 					continue
-				} else if is_head
+				} else if is_header {
+					// Set the columns from
