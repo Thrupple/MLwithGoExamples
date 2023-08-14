@@ -326,4 +326,4 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 						return err
 					}
 					is_header = false
-				
+				} else if err := this.AppendStri
