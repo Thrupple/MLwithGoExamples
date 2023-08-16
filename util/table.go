@@ -338,3 +338,7 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 // Stringify
 func (this *Value) String() string {
 	return this.Str
+}
+
+func (this *Error) Error() string {
+	if th
