@@ -332,4 +332,8 @@ func (this *Table) ReadCSV(filename string, skip_header, skip_comments, treat_em
 			}
 		}
 	}
-	retu
+	return nil
+}
+
+// Stringify
+func (
