@@ -341,4 +341,7 @@ func (this *Value) String() string {
 }
 
 func (this *Error) Error() string {
-	if th
+	if this.line == 0 {
+		return this.reason
+	} else {
+		r
