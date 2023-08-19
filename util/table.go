@@ -344,4 +344,8 @@ func (this *Error) Error() string {
 	if this.line == 0 {
 		return this.reason
 	} else {
-		return fmt.Sprintf("%v @ line %v", thi
+		return fmt.Sprintf("%v @ line %v", this.reason, this.line)
+	}
+}
+
+func (
