@@ -348,4 +348,8 @@ func (this *Error) Error() string {
 	}
 }
 
-func (
+func (this *Error) Line(i int) {
+	this.line = i
+}
+
+func 
