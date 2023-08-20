@@ -352,4 +352,4 @@ func (this *Error) Line(i int) {
 	this.line = i
 }
 
-func 
+func (this *Value) Float64() (float64, 
