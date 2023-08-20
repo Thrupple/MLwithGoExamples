@@ -352,4 +352,6 @@ func (this *Error) Line(i int) {
 	this.line = i
 }
 
-func (this *Value) Float64() (float64, 
+func (this *Value) Float64() (float64, error) {
+	if this._Float64 != nil {
+		retur
