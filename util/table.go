@@ -358,4 +358,9 @@ func (this *Value) Float64() (float64, error) {
 	} else if f, err := float64conv(this.Str); err != nil {
 		return math.NaN(), err
 	} else {
-		thi
+		this._Float64 = &f
+		return f, nil
+	}
+}
+
+fun
