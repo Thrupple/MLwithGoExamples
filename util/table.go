@@ -355,4 +355,7 @@ func (this *Error) Line(i int) {
 func (this *Value) Float64() (float64, error) {
 	if this._Float64 != nil {
 		return *this._Float64, nil
-	} else if f, err := float64conv(this.Str); err != 
+	} else if f, err := float64conv(this.Str); err != nil {
+		return math.NaN(), err
+	} else {
+		thi
