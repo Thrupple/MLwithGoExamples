@@ -363,4 +363,4 @@ func (this *Value) Float64() (float64, error) {
 	}
 }
 
-fun
+func (this *Value) Uint64() (uint64, 
