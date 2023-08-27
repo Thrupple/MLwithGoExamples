@@ -363,4 +363,6 @@ func (this *Value) Float64() (float64, error) {
 	}
 }
 
-func (this *Value) Uint64() (uint64, 
+func (this *Value) Uint64() (uint64, error) {
+	if this._Uint64 != nil {
+		retu
