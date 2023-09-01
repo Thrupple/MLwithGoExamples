@@ -366,4 +366,6 @@ func (this *Value) Float64() (float64, error) {
 func (this *Value) Uint64() (uint64, error) {
 	if this._Uint64 != nil {
 		return *this._Uint64, nil
-	} else if v, err := strconv.ParseUint(this.Str, 
+	} else if v, err := strconv.ParseUint(this.Str, 10, 64); err != nil {
+		return 0, err
+	} el
