@@ -368,4 +368,6 @@ func (this *Value) Uint64() (uint64, error) {
 		return *this._Uint64, nil
 	} else if v, err := strconv.ParseUint(this.Str, 10, 64); err != nil {
 		return 0, err
-	} el
+	} else {
+		this._Uint64 = &v
+		return v, 
