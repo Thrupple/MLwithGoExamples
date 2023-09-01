@@ -370,4 +370,8 @@ func (this *Value) Uint64() (uint64, error) {
 		return 0, err
 	} else {
 		this._Uint64 = &v
-		return v, 
+		return v, nil
+	}
+}
+
+func (this *Value) 
