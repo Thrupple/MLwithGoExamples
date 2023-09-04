@@ -389,4 +389,5 @@ func float64conv(str string) (float64, error) {
 	return strconv.ParseFloat(str, 64)
 }
 
-/
+// Output table as ASCII table
+func (this *Tab
