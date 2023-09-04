@@ -385,4 +385,8 @@ func (this *Value) Int64() (int64, error) {
 	}
 }
 
-func float64conv(str string) (float64,
+func float64conv(str string) (float64, error) {
+	return strconv.ParseFloat(str, 64)
+}
+
+/
