@@ -379,4 +379,7 @@ func (this *Value) Int64() (int64, error) {
 		return *this._Int64, nil
 	} else if v, err := strconv.ParseInt(this.Str, 10, 64); err != nil {
 		return 0, err
-	
+	} else {
+		this._Int64 = &v
+		return v, nil
+	}
