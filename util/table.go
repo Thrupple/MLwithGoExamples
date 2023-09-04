@@ -374,4 +374,5 @@ func (this *Value) Uint64() (uint64, error) {
 	}
 }
 
-func (this *Value) 
+func (this *Value) Int64() (int64, error) {
+	if this._Int
