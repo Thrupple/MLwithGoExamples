@@ -390,4 +390,5 @@ func float64conv(str string) (float64, error) {
 }
 
 // Output table as ASCII table
-func (this *Tab
+func (this *Table) String() string {
+	buf := new(bytes.B
