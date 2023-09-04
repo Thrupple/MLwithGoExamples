@@ -383,3 +383,6 @@ func (this *Value) Int64() (int64, error) {
 		this._Int64 = &v
 		return v, nil
 	}
+}
+
+func float64conv(str string) (float64,
