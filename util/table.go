@@ -391,4 +391,5 @@ func float64conv(str string) (float64, error) {
 
 // Output table as ASCII table
 func (this *Table) String() string {
-	buf := new(bytes.B
+	buf := new(bytes.Buffer)
+	table := tablewriter.NewWrite
