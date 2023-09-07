@@ -394,4 +394,4 @@ func (this *Table) String() string {
 	buf := new(bytes.Buffer)
 	table := tablewriter.NewWriter(buf)
 	table.SetHeader(this.Columns)
-	tabl
+	table.SetAlignment(tablewriter.ALIGN_LEFT)
