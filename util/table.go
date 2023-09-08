@@ -395,3 +395,6 @@ func (this *Table) String() string {
 	table := tablewriter.NewWriter(buf)
 	table.SetHeader(this.Columns)
 	table.SetAlignment(tablewriter.ALIGN_LEFT)
+
+	for i := range this.Rows {
+		if row,
