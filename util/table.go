@@ -397,4 +397,6 @@ func (this *Table) String() string {
 	table.SetAlignment(tablewriter.ALIGN_LEFT)
 
 	for i := range this.Rows {
-		if row, err := this.StringRow(i, "<nil>"); err != nil 
+		if row, err := this.StringRow(i, "<nil>"); err != nil {
+			buf.WriteString(fmt.Sprintf("%v\n", err))
+	
