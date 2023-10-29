@@ -400,4 +400,9 @@ func (this *Table) String() string {
 		if row, err := this.StringRow(i, "<nil>"); err != nil {
 			buf.WriteString(fmt.Sprintf("%v\n", err))
 		} else {
-			table.Append(row
+			table.Append(row)
+		}
+	}
+	table.Render()
+	return buf.String()
+}
